@@ -1,2211 +1,1295 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soul Healing Massage Therapy — Mount Maunganui</title>
-    <meta
-      name="description"
-      content="Holistic, remedial and relaxation massage in Papamoa Beach, Mount Maunganui. Tailored sessions by Kati at Soul Healing Massage Therapy." />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soul Healing Massage Therapy — Mount Maunganui</title>
+<meta name="description" content="Holistic, remedial and relaxation massage in Papamoa Beach, Mount Maunganui. Tailored sessions by Kati at Soul Healing Massage Therapy.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter+Tight:wght@300;400;500&display=swap"
-      rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <style>
-      :root {
-        --sage: #7b8b6f;
-        --sage-deep: #4a5a44;
-        --clay: #b8674a;
-        --clay-soft: #d99a7a;
-        --cream: #f4ede1;
-        --cream-warm: #ebe1cf;
-        --ink: #2b2a26;
-        --ink-soft: #5a564d;
-        --line: rgba(43, 42, 38, 0.12);
-      }
+<style>
+:root{
+  --sage:#7b8b6f;
+  --sage-deep:#4a5a44;
+  --clay:#b8674a;
+  --clay-soft:#d99a7a;
+  --cream:#f4ede1;
+  --cream-warm:#ebe1cf;
+  --ink:#2b2a26;
+  --ink-soft:#5a564d;
+  --line:rgba(43,42,38,0.12);
+}
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 300;
-        background: var(--cream);
-        color: var(--ink);
-        line-height: 1.5;
-        overflow-x: hidden;
-      }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter Tight',sans-serif;
+  font-weight:300;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.5;
+  overflow-x:hidden;
+}
 
-      .serif {
-        font-family: "Fraunces", serif;
-      }
-      .italic {
-        font-style: italic;
-      }
+.serif{font-family:'Fraunces',serif}
+.italic{font-style:italic}
 
-      /* ---------- NAV ---------- */
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        padding: 1.5rem 2.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        backdrop-filter: blur(12px);
-        background: rgba(244, 237, 225, 0.75);
-        border-bottom: 1px solid var(--line);
-      }
-      .logo {
-        display: flex;
-        align-items: center;
-        height: 58px;
-        text-decoration: none;
-        transition:
-          opacity 0.3s ease,
-          transform 0.3s ease;
-      }
-      .logo:hover {
-        opacity: 0.8;
-        transform: scale(1.02);
-      }
-      .logo img {
-        height: 100%;
-        width: auto;
-        display: block;
-      }
-      @media (max-width: 768px) {
-        .logo {
-          height: 48px;
-        }
-      }
-      .nav-links {
-        display: flex;
-        gap: 2.5rem;
-        font-size: 0.85rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-      .nav-links a {
-        color: var(--ink-soft);
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-      .nav-links a:hover {
-        color: var(--clay);
-      }
-      .nav-cta {
-        padding: 0.6rem 1.4rem;
-        background: var(--ink);
-        color: var(--cream);
-        text-decoration: none;
-        font-size: 0.8rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        border-radius: 999px;
-        transition: all 0.3s;
-      }
-      .nav-cta:hover {
-        background: var(--clay);
-        transform: translateY(-1px);
-      }
-      @media (max-width: 768px) {
-        nav {
-          padding: 1rem 1.25rem;
-        }
-        .nav-links {
-          display: none;
-        }
-      }
+/* ---------- NAV ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:1.5rem 2.5rem;
+  display:flex;justify-content:space-between;align-items:center;
+  backdrop-filter:blur(12px);
+  background:rgba(244,237,225,0.75);
+  border-bottom:1px solid var(--line);
+}
+.logo{
+  display:flex;
+  align-items:center;
+  height:58px;
+  text-decoration:none;
+  transition:opacity .3s ease, transform .3s ease;
+}
+.logo:hover{opacity:0.8;transform:scale(1.02)}
+.logo img{
+  height:100%;
+  width:auto;
+  display:block;
+}
+@media(max-width:768px){
+  .logo{height:48px}
+}
+.nav-links{display:flex;gap:2.5rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase}
+.nav-links a{color:var(--ink-soft);text-decoration:none;transition:color .3s}
+.nav-links a:hover{color:var(--clay)}
+.nav-cta{
+  padding:0.6rem 1.4rem;
+  background:var(--ink);color:var(--cream);
+  text-decoration:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;
+  border-radius:999px;transition:all .3s;
+}
+.nav-cta:hover{background:var(--clay);transform:translateY(-1px)}
+@media(max-width:768px){
+  nav{padding:1rem 1.25rem}
+  .nav-links{display:none}
+}
 
-      /* ---------- HERO ---------- */
-      .hero {
-        min-height: 100vh;
-        padding: 8rem 2.5rem 4rem;
-        display: grid;
-        grid-template-columns: 1.1fr 1fr;
-        gap: 3rem;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-      }
-      .hero::before {
-        content: "";
-        position: absolute;
-        top: 20%;
-        right: -10%;
-        width: 600px;
-        height: 600px;
-        background: radial-gradient(
-          circle,
-          var(--clay-soft) 0%,
-          transparent 60%
-        );
-        opacity: 0.25;
-        filter: blur(40px);
-        z-index: 0;
-      }
-      .hero-content {
-        position: relative;
-        z-index: 2;
-      }
-      .eyebrow {
-        font-size: 0.75rem;
-        letter-spacing: 0.3em;
-        text-transform: uppercase;
-        color: var(--clay);
-        margin-bottom: 1.5rem;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
-      .eyebrow::before {
-        content: "";
-        width: 40px;
-        height: 1px;
-        background: var(--clay);
-      }
-      .hero h1 {
-        font-family: "Fraunces", serif;
-        font-weight: 300;
-        font-size: clamp(2.8rem, 6vw, 5.5rem);
-        line-height: 1.02;
-        letter-spacing: -0.02em;
-        margin-bottom: 2rem;
-        color: var(--ink);
-      }
-      .hero h1 em {
-        color: var(--clay);
-        font-weight: 400;
-      }
-      .hero-lede {
-        font-size: 1.1rem;
-        color: var(--ink-soft);
-        max-width: 480px;
-        margin-bottom: 2.5rem;
-        line-height: 1.7;
-      }
-      .hero-cta-row {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .btn-primary {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.6rem;
-        padding: 1rem 2rem;
-        background: var(--ink);
-        color: var(--cream);
-        text-decoration: none;
-        font-size: 0.85rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        border-radius: 999px;
-        transition: all 0.3s ease;
-      }
-      .btn-primary:hover {
-        background: var(--clay);
-        transform: translateY(-2px);
-        box-shadow: 0 12px 30px rgba(184, 103, 74, 0.3);
-      }
-      .btn-primary svg {
-        transition: transform 0.3s;
-      }
-      .btn-primary:hover svg {
-        transform: translateX(4px);
-      }
-      .btn-ghost {
-        font-size: 0.85rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--ink-soft);
-        text-decoration: none;
-        border-bottom: 1px solid var(--ink-soft);
-        padding-bottom: 2px;
-        transition:
-          color 0.3s,
-          border-color 0.3s;
-      }
-      .btn-ghost:hover {
-        color: var(--clay);
-        border-color: var(--clay);
-      }
+/* ---------- HERO ---------- */
+.hero{
+  min-height:100vh;
+  padding:8rem 2.5rem 4rem;
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:3rem;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  top:20%;right:-10%;
+  width:600px;height:600px;
+  background:radial-gradient(circle,var(--clay-soft) 0%,transparent 60%);
+  opacity:0.25;
+  filter:blur(40px);
+  z-index:0;
+}
+.hero-content{position:relative;z-index:2}
+.eyebrow{
+  font-size:0.75rem;
+  letter-spacing:0.3em;
+  text-transform:uppercase;
+  color:var(--clay);
+  margin-bottom:1.5rem;
+  display:flex;align-items:center;gap:1rem;
+}
+.eyebrow::before{
+  content:'';width:40px;height:1px;background:var(--clay);
+}
+.hero h1{
+  font-family:'Fraunces',serif;
+  font-weight:300;
+  font-size:clamp(2.8rem,6vw,5.5rem);
+  line-height:1.02;
+  letter-spacing:-0.02em;
+  margin-bottom:2rem;
+  color:var(--ink);
+}
+.hero h1 em{
+  color:var(--clay);
+  font-weight:400;
+}
+.hero-lede{
+  font-size:1.1rem;
+  color:var(--ink-soft);
+  max-width:480px;
+  margin-bottom:2.5rem;
+  line-height:1.7;
+}
+.hero-cta-row{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:0.6rem;
+  padding:1rem 2rem;
+  background:var(--ink);color:var(--cream);
+  text-decoration:none;
+  font-size:0.85rem;letter-spacing:0.12em;text-transform:uppercase;
+  border-radius:999px;
+  transition:all .3s ease;
+}
+.btn-primary:hover{background:var(--clay);transform:translateY(-2px);box-shadow:0 12px 30px rgba(184,103,74,0.3)}
+.btn-primary svg{transition:transform .3s}
+.btn-primary:hover svg{transform:translateX(4px)}
+.btn-ghost{
+  font-size:0.85rem;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--ink-soft);text-decoration:none;
+  border-bottom:1px solid var(--ink-soft);
+  padding-bottom:2px;
+  transition:color .3s,border-color .3s;
+}
+.btn-ghost:hover{color:var(--clay);border-color:var(--clay)}
 
-      .hero-visual {
-        position: relative;
-        z-index: 1;
-        height: 80vh;
-        max-height: 700px;
-      }
-      .hero-img-main {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 75%;
-        height: 75%;
-        background: url("images/hero-main.jpg") center/cover;
-        border-radius: 300px 300px 8px 8px;
-        box-shadow: 0 30px 60px -20px rgba(43, 42, 38, 0.3);
-      }
-      .hero-img-sub {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 55%;
-        height: 45%;
-        background: url("images/hero-sub.jpg") center/cover;
-        border-radius: 8px;
-        box-shadow: 0 20px 40px -15px rgba(43, 42, 38, 0.25);
-        border: 8px solid var(--cream);
-      }
-      .hero-rating {
-        position: absolute;
-        top: 55%;
-        left: -5%;
-        background: var(--cream);
-        padding: 1.2rem 1.5rem;
-        border-radius: 100px;
-        box-shadow: 0 15px 35px -10px rgba(43, 42, 38, 0.2);
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        z-index: 5;
-      }
-      .hero-rating .stars {
-        color: var(--clay);
-        font-size: 0.9rem;
-        letter-spacing: 0.1em;
-      }
-      .hero-rating .num {
-        font-family: "Fraunces", serif;
-        font-size: 1.4rem;
-        font-weight: 400;
-        border-right: 1px solid var(--line);
-        padding-right: 0.8rem;
-      }
-      .hero-rating .label {
-        font-size: 0.7rem;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        color: var(--ink-soft);
-      }
+.hero-visual{
+  position:relative;
+  z-index:1;
+  height:80vh;
+  max-height:700px;
+}
+.hero-img-main{
+  position:absolute;
+  top:0;right:0;
+  width:75%;height:75%;
+  background:url('images/hero-main.jpg') center/cover;
+  border-radius:300px 300px 8px 8px;
+  box-shadow:0 30px 60px -20px rgba(43,42,38,0.3);
+}
+.hero-img-sub{
+  position:absolute;
+  bottom:0;left:0;
+  width:55%;height:45%;
+  background:url('images/hero-sub.jpg') center/cover;
+  border-radius:8px;
+  box-shadow:0 20px 40px -15px rgba(43,42,38,0.25);
+  border:8px solid var(--cream);
+}
+.hero-rating{
+  position:absolute;
+  top:55%;left:-5%;
+  background:var(--cream);
+  padding:1.2rem 1.5rem;
+  border-radius:100px;
+  box-shadow:0 15px 35px -10px rgba(43,42,38,0.2);
+  display:flex;align-items:center;gap:0.8rem;
+  z-index:5;
+}
+.hero-rating .stars{color:var(--clay);font-size:0.9rem;letter-spacing:0.1em}
+.hero-rating .num{
+  font-family:'Fraunces',serif;font-size:1.4rem;font-weight:400;
+  border-right:1px solid var(--line);padding-right:0.8rem;
+}
+.hero-rating .label{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-soft)}
 
-      @media (max-width: 900px) {
-        .hero {
-          grid-template-columns: 1fr;
-          padding: 7rem 1.25rem 3rem;
-          gap: 3rem;
-        }
-        .hero-visual {
-          height: 60vh;
-          max-height: 500px;
-        }
-        .hero-rating {
-          top: auto;
-          bottom: 30%;
-          left: 0;
-        }
-      }
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding:7rem 1.25rem 3rem;gap:3rem}
+  .hero-visual{height:60vh;max-height:500px}
+  .hero-rating{top:auto;bottom:30%;left:0}
+}
 
-      /* ---------- ABOUT ---------- */
-      .about {
-        padding: 8rem 2.5rem;
-        background: var(--cream-warm);
-        position: relative;
-      }
-      .about-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1.3fr;
-        gap: 5rem;
-        align-items: center;
-      }
-      .about-img {
-        height: 520px;
-        background: url("images/photo-perfil.jpg") center/cover;
-        border-radius: 8px;
-        position: relative;
-      }
-      .about-img::after {
-        content: "";
-        position: absolute;
-        inset: -20px -20px 20px 20px;
-        border: 1px solid var(--clay);
-        border-radius: 8px;
-        z-index: -1;
-      }
-      .about h2 {
-        font-family: "Fraunces", serif;
-        font-weight: 300;
-        font-size: clamp(2.2rem, 4vw, 3.5rem);
-        line-height: 1.1;
-        margin-bottom: 2rem;
-        letter-spacing: -0.01em;
-      }
-      .about h2 em {
-        color: var(--sage-deep);
-      }
-      .about p {
-        font-size: 1.05rem;
-        color: var(--ink-soft);
-        line-height: 1.8;
-        margin-bottom: 1.5rem;
-      }
-      .signature {
-        font-family: "Fraunces", serif;
-        font-style: italic;
-        font-size: 1.6rem;
-        color: var(--clay);
-        margin-top: 2rem;
-      }
-      @media (max-width: 900px) {
-        .about {
-          padding: 5rem 1.25rem;
-        }
-        .about-inner {
-          grid-template-columns: 1fr;
-          gap: 3rem;
-        }
-        .about-img {
-          height: 400px;
-        }
-      }
+/* ---------- ABOUT ---------- */
+.about{
+  padding:8rem 2.5rem;
+  background:var(--cream-warm);
+  position:relative;
+}
+.about-inner{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1.3fr;gap:5rem;align-items:center;
+}
+.about-img{
+  height:520px;
+  background:url('images/about.jpg') center/cover;
+  border-radius:8px;
+  position:relative;
+}
+.about-img::after{
+  content:'';
+  position:absolute;
+  inset:-20px -20px 20px 20px;
+  border:1px solid var(--clay);
+  border-radius:8px;
+  z-index:-1;
+}
+.about h2{
+  font-family:'Fraunces',serif;
+  font-weight:300;
+  font-size:clamp(2.2rem,4vw,3.5rem);
+  line-height:1.1;
+  margin-bottom:2rem;
+  letter-spacing:-0.01em;
+}
+.about h2 em{color:var(--sage-deep)}
+.about p{
+  font-size:1.05rem;
+  color:var(--ink-soft);
+  line-height:1.8;
+  margin-bottom:1.5rem;
+}
+.signature{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-size:1.6rem;
+  color:var(--clay);
+  margin-top:2rem;
+}
+@media(max-width:900px){
+  .about{padding:5rem 1.25rem}
+  .about-inner{grid-template-columns:1fr;gap:3rem}
+  .about-img{height:400px}
+}
 
-      /* ---------- SERVICES ---------- */
-      .services {
-        padding: 8rem 2.5rem;
-        background: var(--cream);
-      }
-      .services-header {
-        max-width: 1100px;
-        margin: 0 auto 3rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        gap: 2rem;
-      }
-      .services-header h2 {
-        font-family: "Fraunces", serif;
-        font-weight: 300;
-        font-size: clamp(2.2rem, 4vw, 3.5rem);
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-        max-width: 600px;
-      }
-      .services-header p {
-        color: var(--ink-soft);
-        max-width: 340px;
-        font-size: 0.95rem;
-        line-height: 1.7;
-      }
+/* ---------- SERVICES ---------- */
+.services{
+  padding:8rem 2.5rem;
+  background:var(--cream);
+}
+.services-header{
+  max-width:1100px;margin:0 auto 3rem;
+  display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem;
+}
+.services-header h2{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:clamp(2.2rem,4vw,3.5rem);
+  line-height:1.1;letter-spacing:-0.01em;
+  max-width:600px;
+}
+.services-header p{
+  color:var(--ink-soft);max-width:340px;font-size:0.95rem;line-height:1.7;
+}
 
-      .services-wrap {
-        max-width: 1100px;
-        margin: 0 auto;
-      }
+.services-wrap{max-width:1100px;margin:0 auto}
 
-      .category {
-        border-bottom: 1px solid var(--line);
-      }
-      .category:first-of-type {
-        border-top: 1px solid var(--line);
-      }
+.category{
+  border-bottom:1px solid var(--line);
+}
+.category:first-of-type{border-top:1px solid var(--line)}
 
-      .category-toggle {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1.5rem;
-        padding: 1.6rem 0.5rem;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        font-family: inherit;
-        text-align: left;
-        color: var(--ink);
-        transition:
-          padding 0.3s,
-          background 0.3s;
-      }
-      .category-toggle:hover {
-        background: var(--cream-warm);
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      .category-toggle h3 {
-        font-family: "Fraunces", serif;
-        font-weight: 400;
-        font-size: 1.4rem;
-        letter-spacing: -0.01em;
-        margin: 0;
-        flex: 1;
-      }
-      .category-meta {
-        font-size: 0.85rem;
-        color: var(--ink-soft);
-        white-space: nowrap;
-      }
-      .category-meta .price-range {
-        color: var(--clay);
-        font-family: "Fraunces", serif;
-        margin-left: 0.5rem;
-      }
-      .chevron {
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--line);
-        border-radius: 50%;
-        transition:
-          transform 0.4s ease,
-          background 0.3s,
-          color 0.3s;
-        flex-shrink: 0;
-      }
-      .category.open .chevron {
-        transform: rotate(180deg);
-        background: var(--ink);
-        color: var(--cream);
-        border-color: var(--ink);
-      }
+.category-toggle{
+  width:100%;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1.5rem;
+  padding:1.6rem 0.5rem;
+  background:transparent;
+  border:none;
+  cursor:pointer;
+  font-family:inherit;
+  text-align:left;
+  color:var(--ink);
+  transition:padding .3s,background .3s;
+}
+.category-toggle:hover{background:var(--cream-warm);padding-left:1rem;padding-right:1rem}
+.category-toggle h3{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:1.4rem;letter-spacing:-0.01em;
+  margin:0;flex:1;
+}
+.category-meta{
+  font-size:0.85rem;color:var(--ink-soft);
+  white-space:nowrap;
+}
+.category-meta .price-range{
+  color:var(--clay);font-family:'Fraunces',serif;
+  margin-left:0.5rem;
+}
+.chevron{
+  width:32px;height:32px;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--line);
+  border-radius:50%;
+  transition:transform .4s ease,background .3s,color .3s;
+  flex-shrink:0;
+}
+.category.open .chevron{
+  transform:rotate(180deg);
+  background:var(--ink);color:var(--cream);
+  border-color:var(--ink);
+}
 
-      .category-body {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease;
-      }
-      .category.open .category-body {
-        max-height: 2000px;
-      }
-      .category-body-inner {
-        padding: 0.5rem 0.5rem 2rem;
-      }
+.category-body{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .5s ease;
+}
+.category.open .category-body{max-height:2000px}
+.category-body-inner{padding:0.5rem 0.5rem 2rem}
 
-      .category-note {
-        font-size: 0.9rem;
-        line-height: 1.6;
-        color: var(--ink-soft);
-        max-width: 680px;
-        margin-bottom: 1.5rem;
-        padding: 1rem 1.2rem;
-        background: var(--cream-warm);
-        border-left: 3px solid var(--clay);
-        border-radius: 4px;
-      }
-      .category-note strong {
-        color: var(--ink);
-        font-weight: 500;
-      }
+.category-note{
+  font-size:0.9rem;line-height:1.6;color:var(--ink-soft);
+  max-width:680px;
+  margin-bottom:1.5rem;
+  padding:1rem 1.2rem;
+  background:var(--cream-warm);
+  border-left:3px solid var(--clay);
+  border-radius:4px;
+}
+.category-note strong{color:var(--ink);font-weight:500}
 
-      .service-list {
-        display: flex;
-        flex-direction: column;
-      }
-      .service-row {
-        display: grid;
-        grid-template-columns: 1fr auto auto;
-        gap: 2rem;
-        align-items: center;
-        padding: 1.3rem 0;
-        border-top: 1px solid var(--line);
-      }
-      .service-row:first-child {
-        border-top: none;
-      }
-      .service-info h4 {
-        font-family: "Fraunces", serif;
-        font-weight: 400;
-        font-size: 1.1rem;
-        letter-spacing: -0.01em;
-        margin-bottom: 0.3rem;
-      }
-      .service-meta {
-        font-size: 0.78rem;
-        letter-spacing: 0.05em;
-        color: var(--clay);
-        text-transform: uppercase;
-        margin-bottom: 0.5rem;
-      }
-      .service-desc {
-        font-size: 0.88rem;
-        line-height: 1.55;
-        color: var(--ink-soft);
-        max-width: 560px;
-      }
-      .service-price-tag {
-        font-family: "Fraunces", serif;
-        font-size: 1.3rem;
-        font-weight: 400;
-        white-space: nowrap;
-      }
-      .service-price-tag .currency {
-        font-size: 0.75rem;
-        color: var(--ink-soft);
-        margin-right: 0.15rem;
-      }
-      .service-book {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border: 1px solid var(--line);
-        border-radius: 50%;
-        color: var(--ink);
-        text-decoration: none;
-        transition: all 0.3s ease;
-        background: var(--cream);
-      }
-      .service-book:hover {
-        background: var(--ink);
-        color: var(--cream);
-        border-color: var(--ink);
-        transform: rotate(45deg);
-      }
+.service-list{
+  display:flex;flex-direction:column;
+}
+.service-row{
+  display:grid;
+  grid-template-columns:1fr auto auto;
+  gap:2rem;
+  align-items:center;
+  padding:1.3rem 0;
+  border-top:1px solid var(--line);
+}
+.service-row:first-child{border-top:none}
+.service-info h4{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:1.1rem;letter-spacing:-0.01em;
+  margin-bottom:0.3rem;
+}
+.service-meta{
+  font-size:0.78rem;letter-spacing:0.05em;
+  color:var(--clay);text-transform:uppercase;
+  margin-bottom:0.5rem;
+}
+.service-desc{
+  font-size:0.88rem;line-height:1.55;color:var(--ink-soft);
+  max-width:560px;
+}
+.service-price-tag{
+  font-family:'Fraunces',serif;font-size:1.3rem;font-weight:400;
+  white-space:nowrap;
+}
+.service-price-tag .currency{font-size:0.75rem;color:var(--ink-soft);margin-right:0.15rem}
+.service-book{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:40px;height:40px;
+  border:1px solid var(--line);
+  border-radius:50%;
+  color:var(--ink);text-decoration:none;
+  transition:all .3s ease;
+  background:var(--cream);
+}
+.service-book:hover{
+  background:var(--ink);color:var(--cream);
+  border-color:var(--ink);
+  transform:rotate(45deg);
+}
 
-      .giftcard-box {
-        margin-top: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1.5rem;
-        padding: 1.8rem 2rem;
-        background: var(--cream-warm);
-        border-radius: 12px;
-        border: 1px solid var(--line);
-      }
-      .giftcard-box .gc-text h4 {
-        font-family: "Fraunces", serif;
-        font-weight: 400;
-        font-size: 1.3rem;
-        margin-bottom: 0.3rem;
-      }
-      .giftcard-box .gc-text p {
-        font-size: 0.9rem;
-        color: var(--ink-soft);
-      }
-      .giftcard-box a {
-        font-size: 0.8rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        padding: 0.8rem 1.5rem;
-        background: var(--ink);
-        color: var(--cream);
-        text-decoration: none;
-        border-radius: 999px;
-        white-space: nowrap;
-        transition:
-          background 0.3s,
-          transform 0.3s;
-      }
-      .giftcard-box a:hover {
-        background: var(--clay);
-        transform: translateY(-1px);
-      }
+.giftcard-box{
+  margin-top:2rem;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1.5rem;
+  padding:1.8rem 2rem;
+  background:var(--cream-warm);
+  border-radius:12px;
+  border:1px solid var(--line);
+}
+.giftcard-box .gc-text h4{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:1.3rem;margin-bottom:0.3rem;
+}
+.giftcard-box .gc-text p{
+  font-size:0.9rem;color:var(--ink-soft);
+}
+.giftcard-box a{
+  font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;
+  padding:0.8rem 1.5rem;
+  background:var(--ink);color:var(--cream);
+  text-decoration:none;border-radius:999px;
+  white-space:nowrap;
+  transition:background .3s,transform .3s;
+}
+.giftcard-box a:hover{background:var(--clay);transform:translateY(-1px)}
 
-      @media (max-width: 768px) {
-        .services {
-          padding: 5rem 1.25rem;
-        }
-        .category-toggle {
-          padding: 1.3rem 0.3rem;
-          gap: 0.8rem;
-        }
-        .category-toggle:hover {
-          padding: 1.3rem 0.5rem;
-        }
-        .category-toggle h3 {
-          font-size: 1.15rem;
-        }
-        .category-meta {
-          font-size: 0.75rem;
-        }
-        .service-row {
-          grid-template-columns: 1fr auto;
-          gap: 0.8rem 1rem;
-          padding: 1.2rem 0;
-        }
-        .service-info {
-          grid-column: 1 / -1;
-        }
-        .service-price-tag {
-          order: 1;
-        }
-        .service-book {
-          order: 2;
-        }
-        .giftcard-box {
-          flex-direction: column;
-          align-items: flex-start;
-          text-align: left;
-        }
-      }
+@media(max-width:768px){
+  .services{padding:5rem 1.25rem}
+  .category-toggle{padding:1.3rem 0.3rem;gap:0.8rem}
+  .category-toggle:hover{padding:1.3rem 0.5rem}
+  .category-toggle h3{font-size:1.15rem}
+  .category-meta{font-size:0.75rem}
+  .service-row{
+    grid-template-columns:1fr auto;
+    gap:0.8rem 1rem;
+    padding:1.2rem 0;
+  }
+  .service-info{grid-column:1 / -1}
+  .service-price-tag{order:1}
+  .service-book{order:2}
+  .giftcard-box{flex-direction:column;align-items:flex-start;text-align:left}
+}
 
-      /* ---------- APPROACH ---------- */
-      .approach {
-        padding: 8rem 2.5rem;
-        background: var(--sage-deep);
-        color: var(--cream);
-        position: relative;
-        overflow: hidden;
-      }
-      .approach::before {
-        content: "";
-        position: absolute;
-        top: -20%;
-        left: -10%;
-        width: 500px;
-        height: 500px;
-        background: radial-gradient(circle, var(--sage) 0%, transparent 70%);
-        opacity: 0.4;
-        filter: blur(60px);
-      }
-      .approach-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 2;
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 5rem;
-      }
-      .approach h2 {
-        font-family: "Fraunces", serif;
-        font-weight: 300;
-        font-size: clamp(2.2rem, 4vw, 3.5rem);
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-      }
-      .approach h2 em {
-        color: var(--clay-soft);
-        font-weight: 300;
-      }
-      .approach-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
-      }
-      .approach-item {
-        padding-top: 1.5rem;
-        border-top: 1px solid rgba(244, 237, 225, 0.2);
-      }
-      .approach-item .num {
-        font-family: "Fraunces", serif;
-        font-style: italic;
-        font-size: 0.85rem;
-        color: var(--clay-soft);
-        margin-bottom: 0.8rem;
-      }
-      .approach-item h4 {
-        font-family: "Fraunces", serif;
-        font-weight: 400;
-        font-size: 1.3rem;
-        margin-bottom: 0.8rem;
-      }
-      .approach-item p {
-        font-size: 0.92rem;
-        line-height: 1.7;
-        color: rgba(244, 237, 225, 0.75);
-      }
-      @media (max-width: 900px) {
-        .approach {
-          padding: 5rem 1.25rem;
-        }
-        .approach-inner {
-          grid-template-columns: 1fr;
-          gap: 3rem;
-        }
-        .approach-grid {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-        }
-      }
+/* ---------- APPROACH ---------- */
+.approach{
+  padding:8rem 2.5rem;
+  background:var(--sage-deep);
+  color:var(--cream);
+  position:relative;overflow:hidden;
+}
+.approach::before{
+  content:'';position:absolute;
+  top:-20%;left:-10%;
+  width:500px;height:500px;
+  background:radial-gradient(circle,var(--sage) 0%,transparent 70%);
+  opacity:0.4;filter:blur(60px);
+}
+.approach-inner{
+  max-width:1100px;margin:0 auto;position:relative;z-index:2;
+  display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;
+}
+.approach h2{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:clamp(2.2rem,4vw,3.5rem);
+  line-height:1.1;letter-spacing:-0.01em;
+}
+.approach h2 em{color:var(--clay-soft);font-weight:300}
+.approach-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem;
+}
+.approach-item{
+  padding-top:1.5rem;
+  border-top:1px solid rgba(244,237,225,0.2);
+}
+.approach-item .num{
+  font-family:'Fraunces',serif;font-style:italic;
+  font-size:0.85rem;color:var(--clay-soft);
+  margin-bottom:0.8rem;
+}
+.approach-item h4{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:1.3rem;margin-bottom:0.8rem;
+}
+.approach-item p{
+  font-size:0.92rem;line-height:1.7;
+  color:rgba(244,237,225,0.75);
+}
+@media(max-width:900px){
+  .approach{padding:5rem 1.25rem}
+  .approach-inner{grid-template-columns:1fr;gap:3rem}
+  .approach-grid{grid-template-columns:1fr;gap:2rem}
+}
 
-      /* ---------- REVIEWS ---------- */
-      .reviews {
-        padding: 8rem 2.5rem;
-        background: var(--cream-warm);
-      }
-      .reviews-header {
-        text-align: center;
-        max-width: 700px;
-        margin: 0 auto 4rem;
-      }
-      .reviews-header h2 {
-        font-family: "Fraunces", serif;
-        font-weight: 300;
-        font-size: clamp(2.2rem, 4vw, 3.5rem);
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-        margin-bottom: 1rem;
-      }
-      .reviews-header h2 em {
-        color: var(--clay);
-      }
-      .reviews-meta {
-        display: inline-flex;
-        align-items: center;
-        gap: 1rem;
-        color: var(--ink-soft);
-        font-size: 0.9rem;
-        letter-spacing: 0.05em;
-      }
-      .reviews-meta .big {
-        font-family: "Fraunces", serif;
-        font-size: 2rem;
-        color: var(--ink);
-      }
-      .reviews-grid {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-      }
-      .review {
-        background: var(--cream);
-        padding: 2.5rem 2rem;
-        border-radius: 8px;
-        position: relative;
-      }
-      .review::before {
-        content: "\201C";
-        font-family: "Fraunces", serif;
-        font-size: 5rem;
-        line-height: 1;
-        color: var(--clay-soft);
-        position: absolute;
-        top: 0.5rem;
-        left: 1.5rem;
-        opacity: 0.5;
-      }
-      .review-text {
-        font-family: "Fraunces", serif;
-        font-style: italic;
-        font-weight: 300;
-        font-size: 1.05rem;
-        line-height: 1.6;
-        color: var(--ink);
-        margin-bottom: 1.5rem;
-        position: relative;
-        z-index: 2;
-      }
-      .review-author {
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        padding-top: 1.2rem;
-        border-top: 1px solid var(--line);
-      }
-      .review-avatar {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        background: var(--sage);
-        color: var(--cream);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.9rem;
-        font-weight: 400;
-      }
-      .review-name {
-        font-size: 0.9rem;
-      }
-      .review-stars {
-        margin-left: auto;
-        color: var(--clay);
-        font-size: 0.8rem;
-        letter-spacing: 0.1em;
-      }
-      @media (max-width: 900px) {
-        .reviews {
-          padding: 5rem 1.25rem;
-        }
-        .reviews-grid {
-          grid-template-columns: 1fr;
-          gap: 1.5rem;
-        }
-      }
+/* ---------- REVIEWS ---------- */
+.reviews{
+  padding:8rem 2.5rem;
+  background:var(--cream-warm);
+}
+.reviews-header{
+  text-align:center;max-width:700px;margin:0 auto 4rem;
+}
+.reviews-header h2{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:clamp(2.2rem,4vw,3.5rem);
+  line-height:1.1;letter-spacing:-0.01em;
+  margin-bottom:1rem;
+}
+.reviews-header h2 em{color:var(--clay)}
+.reviews-meta{
+  display:inline-flex;align-items:center;gap:1rem;
+  color:var(--ink-soft);font-size:0.9rem;letter-spacing:0.05em;
+}
+.reviews-meta .big{
+  font-family:'Fraunces',serif;font-size:2rem;color:var(--ink);
+}
+.reviews-grid{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;
+}
+.review{
+  background:var(--cream);
+  padding:2.5rem 2rem;
+  border-radius:8px;
+  position:relative;
+}
+.review::before{
+  content:'\201C';
+  font-family:'Fraunces',serif;
+  font-size:5rem;line-height:1;
+  color:var(--clay-soft);
+  position:absolute;top:0.5rem;left:1.5rem;
+  opacity:0.5;
+}
+.review-text{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:1.05rem;line-height:1.6;color:var(--ink);
+  margin-bottom:1.5rem;position:relative;z-index:2;
+}
+.review-author{
+  display:flex;align-items:center;gap:0.8rem;
+  padding-top:1.2rem;border-top:1px solid var(--line);
+}
+.review-avatar{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--sage);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.9rem;font-weight:400;
+}
+.review-name{font-size:0.9rem}
+.review-stars{margin-left:auto;color:var(--clay);font-size:0.8rem;letter-spacing:0.1em}
+@media(max-width:900px){
+  .reviews{padding:5rem 1.25rem}
+  .reviews-grid{grid-template-columns:1fr;gap:1.5rem}
+}
 
-      /* ---------- VISIT ---------- */
-      .visit {
-        padding: 8rem 2.5rem;
-        background: var(--cream);
-      }
-      .visit-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-      }
-      .visit h2 {
-        font-family: "Fraunces", serif;
-        font-weight: 300;
-        font-size: clamp(2.2rem, 4vw, 3.5rem);
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-        margin-bottom: 2rem;
-      }
-      .visit h2 em {
-        color: var(--sage-deep);
-      }
-      .visit-block {
-        margin-bottom: 2.5rem;
-      }
-      .visit-block h4 {
-        font-size: 0.75rem;
-        letter-spacing: 0.25em;
-        text-transform: uppercase;
-        color: var(--clay);
-        margin-bottom: 1rem;
-      }
-      .visit-block p,
-      .visit-block li {
-        font-family: "Fraunces", serif;
-        font-weight: 400;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        color: var(--ink);
-      }
-      .hours-list {
-        list-style: none;
-      }
-      .hours-list li {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.6rem 0;
-        border-bottom: 1px solid var(--line);
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
-      }
-      .hours-list li:last-child {
-        border-bottom: none;
-      }
-      .hours-list .day {
-        color: var(--ink-soft);
-        letter-spacing: 0.02em;
-      }
-      .hours-list .time {
-        color: var(--ink);
-        font-weight: 400;
-      }
-      .hours-list .closed {
-        color: var(--clay);
-        font-style: italic;
-      }
-      .features {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.6rem;
-        margin-top: 1.5rem;
-      }
-      .feature {
-        font-size: 0.75rem;
-        letter-spacing: 0.08em;
-        padding: 0.4rem 0.9rem;
-        background: var(--cream-warm);
-        border-radius: 999px;
-        color: var(--ink-soft);
-      }
-      @media (max-width: 900px) {
-        .visit {
-          padding: 5rem 1.25rem;
-        }
-        .visit-inner {
-          grid-template-columns: 1fr;
-          gap: 3rem;
-        }
-      }
+/* ---------- VISIT ---------- */
+.visit{
+  padding:8rem 2.5rem;
+  background:var(--cream);
+}
+.visit-inner{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:5rem;
+}
+.visit h2{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:clamp(2.2rem,4vw,3.5rem);
+  line-height:1.1;letter-spacing:-0.01em;
+  margin-bottom:2rem;
+}
+.visit h2 em{color:var(--sage-deep)}
+.visit-block{margin-bottom:2.5rem}
+.visit-block h4{
+  font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;
+  color:var(--clay);margin-bottom:1rem;
+}
+.visit-block p,.visit-block li{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:1.2rem;line-height:1.5;color:var(--ink);
+}
+.hours-list{list-style:none}
+.hours-list li{
+  display:flex;justify-content:space-between;
+  padding:0.6rem 0;border-bottom:1px solid var(--line);
+  font-family:'Inter Tight',sans-serif;font-weight:300;font-size:1rem;
+}
+.hours-list li:last-child{border-bottom:none}
+.hours-list .day{color:var(--ink-soft);letter-spacing:0.02em}
+.hours-list .time{color:var(--ink);font-weight:400}
+.hours-list .closed{color:var(--clay);font-style:italic}
+.features{
+  display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.5rem;
+}
+.feature{
+  font-size:0.75rem;letter-spacing:0.08em;
+  padding:0.4rem 0.9rem;
+  background:var(--cream-warm);
+  border-radius:999px;color:var(--ink-soft);
+}
+@media(max-width:900px){
+  .visit{padding:5rem 1.25rem}
+  .visit-inner{grid-template-columns:1fr;gap:3rem}
+}
 
-      /* ---------- CTA ---------- */
-      .cta {
-        padding: 8rem 2.5rem;
-        background: var(--ink);
-        color: var(--cream);
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-      }
-      .cta::before {
-        content: "";
-        position: absolute;
-        bottom: -30%;
-        right: -10%;
-        width: 500px;
-        height: 500px;
-        background: radial-gradient(circle, var(--clay) 0%, transparent 60%);
-        opacity: 0.4;
-        filter: blur(60px);
-      }
-      .cta-inner {
-        position: relative;
-        z-index: 2;
-        max-width: 700px;
-        margin: 0 auto;
-      }
-      .cta h2 {
-        font-family: "Fraunces", serif;
-        font-weight: 300;
-        font-size: clamp(2.5rem, 5vw, 4.5rem);
-        line-height: 1.05;
-        letter-spacing: -0.02em;
-        margin-bottom: 1.5rem;
-      }
-      .cta h2 em {
-        color: var(--clay-soft);
-      }
-      .cta p {
-        font-size: 1.05rem;
-        color: rgba(244, 237, 225, 0.7);
-        max-width: 480px;
-        margin: 0 auto 2.5rem;
-        line-height: 1.7;
-      }
-      .cta .btn-primary {
-        background: var(--clay);
-        color: var(--cream);
-        padding: 1.2rem 2.5rem;
-        font-size: 0.9rem;
-      }
-      .cta .btn-primary:hover {
-        background: var(--cream);
-        color: var(--ink);
-      }
+/* ---------- CTA ---------- */
+.cta{
+  padding:8rem 2.5rem;
+  background:var(--ink);color:var(--cream);
+  text-align:center;position:relative;overflow:hidden;
+}
+.cta::before{
+  content:'';position:absolute;
+  bottom:-30%;right:-10%;
+  width:500px;height:500px;
+  background:radial-gradient(circle,var(--clay) 0%,transparent 60%);
+  opacity:0.4;filter:blur(60px);
+}
+.cta-inner{position:relative;z-index:2;max-width:700px;margin:0 auto}
+.cta h2{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:clamp(2.5rem,5vw,4.5rem);
+  line-height:1.05;letter-spacing:-0.02em;
+  margin-bottom:1.5rem;
+}
+.cta h2 em{color:var(--clay-soft)}
+.cta p{
+  font-size:1.05rem;color:rgba(244,237,225,0.7);
+  max-width:480px;margin:0 auto 2.5rem;line-height:1.7;
+}
+.cta .btn-primary{
+  background:var(--clay);color:var(--cream);
+  padding:1.2rem 2.5rem;font-size:0.9rem;
+}
+.cta .btn-primary:hover{background:var(--cream);color:var(--ink)}
 
-      /* ---------- FOOTER ---------- */
-      footer {
-        padding: 3rem 2.5rem 2rem;
-        background: var(--ink);
-        color: rgba(244, 237, 225, 0.5);
-        border-top: 1px solid rgba(244, 237, 225, 0.1);
-        font-size: 0.85rem;
-      }
-      .footer-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-      .footer-inner .serif {
-        font-size: 1.1rem;
-        color: var(--cream);
-      }
-      .footer-inner .serif em {
-        color: var(--clay-soft);
-      }
+/* ---------- FOOTER ---------- */
+footer{
+  padding:3rem 2.5rem 2rem;
+  background:var(--ink);color:rgba(244,237,225,0.5);
+  border-top:1px solid rgba(244,237,225,0.1);
+  font-size:0.85rem;
+}
+.footer-inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;
+}
+.footer-inner .serif{font-size:1.1rem;color:var(--cream)}
+.footer-inner .serif em{color:var(--clay-soft)}
 
-      /* ---------- WHATSAPP FLOATING BUTTON ---------- */
-      .wa-float {
-        position: fixed;
-        bottom: 24px;
-        right: 24px;
-        z-index: 200;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        background: #25d366;
-        color: #fff;
-        padding: 14px 18px 14px 16px;
-        border-radius: 999px;
-        box-shadow:
-          0 10px 30px -8px rgba(37, 211, 102, 0.5),
-          0 4px 12px rgba(0, 0, 0, 0.15);
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease,
-          padding 0.3s ease;
-        font-family: "Inter Tight", sans-serif;
-        font-weight: 400;
-        font-size: 0.9rem;
-      }
-      .wa-float:hover {
-        transform: translateY(-3px) scale(1.02);
-        box-shadow:
-          0 14px 36px -8px rgba(37, 211, 102, 0.6),
-          0 6px 16px rgba(0, 0, 0, 0.2);
-      }
-      .wa-float svg {
-        width: 24px;
-        height: 24px;
-        flex-shrink: 0;
-      }
-      .wa-float .wa-label {
-        margin-left: 10px;
-        white-space: nowrap;
-        max-width: 200px;
-        overflow: hidden;
-      }
-      /* Subtle pulse to draw eye */
-      .wa-float::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        border-radius: 999px;
-        background: #25d366;
-        z-index: -1;
-        animation: wa-pulse 2.5s ease-out infinite;
-      }
-      @keyframes wa-pulse {
-        0% {
-          transform: scale(1);
-          opacity: 0.5;
-        }
-        100% {
-          transform: scale(1.4);
-          opacity: 0;
-        }
-      }
-      @media (max-width: 600px) {
-        .wa-float {
-          bottom: 18px;
-          right: 18px;
-          padding: 14px;
-        }
-        .wa-float .wa-label {
-          display: none;
-        }
-      }
 
-      /* ---------- ANIMATIONS ---------- */
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      .hero-content > * {
-        animation: fadeUp 0.9s ease both;
-      }
-      .hero-content .eyebrow {
-        animation-delay: 0.1s;
-      }
-      .hero-content h1 {
-        animation-delay: 0.25s;
-      }
-      .hero-content .hero-lede {
-        animation-delay: 0.45s;
-      }
-      .hero-content .hero-cta-row {
-        animation-delay: 0.6s;
-      }
-      .hero-visual {
-        animation: fadeUp 1.2s ease 0.3s both;
-      }
+.nav-left{display:flex;align-items:center;gap:1rem}
+.nav-badge{
+  display:flex;align-items:center;
+  height:48px;
+  padding-left:1rem;
+  border-left:1px solid var(--line);
+  transition:opacity .3s ease, transform .3s ease;
+}
+.nav-badge:hover{transform:scale(1.05)}
+.nav-badge img{height:100%;width:auto;display:block;filter:drop-shadow(0 4px 8px rgba(43,42,38,0.15))}
+@media(max-width:768px){
+  .nav-left{gap:0.6rem}
+  .nav-badge{height:36px;padding-left:0.6rem}
+}
+@media(max-width:380px){
+  .nav-badge{height:32px;padding-left:0.5rem}
+}
 
-      [data-reveal] {
-        opacity: 0;
-        transform: translateY(40px);
-        transition:
-          opacity 0.9s ease,
-          transform 0.9s ease;
-      }
-      [data-reveal].in {
-        opacity: 1;
-        transform: translateY(0);
-      }
+/* ---------- WHATSAPP FLOATING BUTTON ---------- */
+.wa-float{
+  position:fixed;
+  bottom:24px;right:24px;
+  z-index:200;
+  display:flex;align-items:center;
+  text-decoration:none;
+  background:#25D366;
+  color:#fff;
+  padding:14px 18px 14px 16px;
+  border-radius:999px;
+  box-shadow:0 10px 30px -8px rgba(37,211,102,0.5), 0 4px 12px rgba(0,0,0,0.15);
+  transition:transform .3s ease, box-shadow .3s ease, padding .3s ease;
+  font-family:'Inter Tight',sans-serif;
+  font-weight:400;
+  font-size:0.9rem;
+}
+.wa-float:hover{
+  transform:translateY(-3px) scale(1.02);
+  box-shadow:0 14px 36px -8px rgba(37,211,102,0.6), 0 6px 16px rgba(0,0,0,0.2);
+}
+.wa-float svg{
+  width:24px;height:24px;
+  flex-shrink:0;
+}
+.wa-float .wa-label{
+  margin-left:10px;
+  white-space:nowrap;
+  max-width:200px;
+  overflow:hidden;
+}
+/* Subtle pulse to draw eye */
+.wa-float::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:999px;
+  background:#25D366;
+  z-index:-1;
+  animation:wa-pulse 2.5s ease-out infinite;
+}
+@keyframes wa-pulse{
+  0%{transform:scale(1);opacity:0.5}
+  100%{transform:scale(1.4);opacity:0}
+}
+@media(max-width:600px){
+  .wa-float{
+    bottom:18px;right:18px;
+    padding:14px;
+  }
+  .wa-float .wa-label{display:none}
+}
 
-      /* Selection */
-      ::selection {
-        background: var(--clay);
-        color: var(--cream);
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <a class="logo" href="#" aria-label="Soul Healing Massage Therapy — home">
-        <img src="images/logo.png" alt="Soul Healing Massage Therapy" />
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.hero-content > *{animation:fadeUp .9s ease both}
+.hero-content .eyebrow{animation-delay:.1s}
+.hero-content h1{animation-delay:.25s}
+.hero-content .hero-lede{animation-delay:.45s}
+.hero-content .hero-cta-row{animation-delay:.6s}
+.hero-visual{animation:fadeUp 1.2s ease .3s both}
+
+[data-reveal]{
+  opacity:0;transform:translateY(40px);
+  transition:opacity .9s ease,transform .9s ease;
+}
+[data-reveal].in{opacity:1;transform:translateY(0)}
+
+/* Selection */
+::selection{background:var(--clay);color:var(--cream)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+  <a class="logo" href="#" aria-label="Soul Healing Massage Therapy — home">
+    <img src="images/logo.png" alt="Soul Healing Massage Therapy">
+  </a>
+  <a class="nav-badge" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Fresha Highly Recommended 2026">
+    <img src="images/fresha-badge.png" alt="Fresha Highly Recommended 2026">
+  </a>
+</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Visit</a>
+  </div>
+  <a class="nav-cta" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener">Book now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Papamoa Beach · Mount Maunganui</div>
+    <h1>Slow down. <em>Soften.</em><br>Come home<br>to yourself.</h1>
+    <p class="hero-lede">Holistic, remedial and relaxation massage by Kati — tailored sessions that release tension, restore stillness, and reconnect you to your body.</p>
+    <div class="hero-cta-row">
+      <a class="btn-primary" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener">
+        Book on Fresha
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#visit">Visit</a>
+      <a class="btn-ghost" href="#services">View services</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-img-main"></div>
+    <div class="hero-img-sub"></div>
+    <div class="hero-rating">
+      <div class="num serif">5.0</div>
+      <div>
+        <div class="stars">★ ★ ★ ★ ★</div>
+        <div class="label">186 reviews</div>
       </div>
-      <a
-        class="nav-cta"
-        href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-        target="_blank"
-        rel="noopener"
-        >Book now</a
-      >
-    </nav>
+    </div>
+  </div>
+</section>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content">
-        <div class="eyebrow">Papamoa Beach · Mount Maunganui</div>
-        <h1>Slow down. <em>Soften.</em><br />Come home<br />to yourself.</h1>
-        <p class="hero-lede">
-          Holistic, remedial and relaxation massage by Kati — tailored sessions
-          that release tension, restore stillness, and reconnect you to your
-          body.
-        </p>
-        <div class="hero-cta-row">
-          <a
-            class="btn-primary"
-            href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-            target="_blank"
-            rel="noopener">
-            Book on Fresha
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M5 12h14M13 5l7 7-7 7" />
-            </svg>
-          </a>
-          <a class="btn-ghost" href="#services">View services</a>
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-img" data-reveal></div>
+    <div data-reveal>
+      <div class="eyebrow">A note from your therapist</div>
+      <h2>Hi, I'm <em>Kati</em>.<br>I hold space for healing.</h2>
+      <p>I'm the therapist behind Soul Healing Massage Therapy. I combine relaxation, deep tissue, remedial, and holistic techniques to create sessions tailored to what your body needs.</p>
+      <p>My aim is to offer a nurturing space where you can release tension, reconnect with yourself, and leave feeling lighter and more refreshed.</p>
+      <div class="signature">— I can't wait to support your well-being.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-header">
+    <h2 data-reveal>Sessions tailored to <em style="color:var(--clay);font-style:italic">your</em> body.</h2>
+    <p data-reveal>Choose by payment type or technique. Every session is adapted to what your body needs that day.</p>
+  </div>
+
+  <div class="services-wrap" data-reveal>
+
+    <!-- Pay with Cash -->
+    <div class="category" data-cat="cash">
+      <button class="category-toggle" aria-expanded="false">
+        <h3>Pay with Cash</h3>
+        <div class="category-meta">4 services <span class="price-range">NZ$55–120</span></div>
+        <span class="chevron">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="category-body"><div class="category-body-inner">
+        <p class="category-note"><strong>Payment with cash at the end of treatment.</strong> Cancellations or reschedules require at least 24 hours notice. Late cancellations or no-shows may incur the full treatment fee. Thank you for understanding.</p>
+        <div class="service-list">
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>90min Massage cash payment</h4>
+              <div class="service-meta">1 hr, 30 min</div>
+              <p class="service-desc">You can choose Deep Tissue Massage, Sports Massage, Relaxation Massage, Remedial Massage, Pregnancy Massage and Holistic Massage.</p>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>120</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Massage cash payment">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>60min Massage cash payment</h4>
+              <div class="service-meta">1 hr</div>
+              <p class="service-desc">You can choose Deep Tissue Massage, Sports Massage, Relaxation Massage, Remedial Massage, Pregnancy Massage and Holistic Massage.</p>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Massage cash payment">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>45min Massage cash payment</h4>
+              <div class="service-meta">45 min</div>
+              <p class="service-desc">You can choose Pregnancy Massage, Remedial Massage, Relaxation Massage, Sports Massage and Deep Tissue Massage.</p>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Massage cash payment">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>30min Massage cash payment</h4>
+              <div class="service-meta">30 min</div>
+              <p class="service-desc">Focused massage: Back, neck and shoulder, or legs and foot, or head, neck and shoulder.</p>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>55</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 30min Massage cash payment">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
         </div>
+      </div></div>
+    </div>
+
+    <!-- I have a Voucher Gift -->
+    <div class="category" data-cat="voucher">
+      <button class="category-toggle" aria-expanded="false">
+        <h3>I have a Voucher Gift</h3>
+        <div class="category-meta">3 services <span class="price-range">NZ$68–120</span></div>
+        <span class="chevron">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="category-body"><div class="category-body-inner">
+        <div class="service-list">
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>90min Massage with Voucher</h4>
+              <div class="service-meta">1 hr, 30 min</div>
+              <p class="service-desc">You can choose Deep Tissue Massage, Sports Massage, Relaxation Massage, Remedial Massage, Pregnancy Massage and Holistic Massage.</p>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>120</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Massage with Voucher">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>60min Massage with Voucher</h4>
+              <div class="service-meta">1 hr</div>
+              <p class="service-desc">You can choose Deep Tissue Massage, Sports Massage, Relaxation Massage, Remedial Massage, Pregnancy Massage and Holistic Massage.</p>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Massage with Voucher">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>45min Massage with Voucher</h4>
+              <div class="service-meta">45 min</div>
+              <p class="service-desc">You can choose Pregnancy Massage, Remedial Massage, Relaxation Massage, Sports Massage and Deep Tissue Massage.</p>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Massage with Voucher">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Holistic Massage -->
+    <div class="category" data-cat="holistic">
+      <button class="category-toggle" aria-expanded="false">
+        <h3>Holistic Massage</h3>
+        <div class="category-meta">2 services <span class="price-range">NZ$80–120</span></div>
+        <span class="chevron">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="category-body"><div class="category-body-inner">
+        <div class="service-list">
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>90min Holistic Massage</h4>
+              <div class="service-meta">1 hr, 30 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>120</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Holistic Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>60min Holistic Massage</h4>
+              <div class="service-meta">1 hr</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Holistic Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Pregnancy Massage -->
+    <div class="category" data-cat="pregnancy">
+      <button class="category-toggle" aria-expanded="false">
+        <h3>Pregnancy Massage</h3>
+        <div class="category-meta">1 service <span class="price-range">NZ$68</span></div>
+        <span class="chevron">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="category-body"><div class="category-body-inner">
+        <div class="service-list">
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>45min Pregnancy Massage</h4>
+              <div class="service-meta">45 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Pregnancy Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Remedial Massage -->
+    <div class="category" data-cat="remedial">
+      <button class="category-toggle" aria-expanded="false">
+        <h3>Remedial Massage</h3>
+        <div class="category-meta">2 services <span class="price-range">NZ$68–80</span></div>
+        <span class="chevron">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="category-body"><div class="category-body-inner">
+        <div class="service-list">
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>60min Remedial Massage</h4>
+              <div class="service-meta">1 hr</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Remedial Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>45min Remedial Massage</h4>
+              <div class="service-meta">45 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Remedial Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Relaxation Massage -->
+    <div class="category" data-cat="relaxation">
+      <button class="category-toggle" aria-expanded="false">
+        <h3>Relaxation Massage</h3>
+        <div class="category-meta">3 services <span class="price-range">NZ$68–120</span></div>
+        <span class="chevron">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="category-body"><div class="category-body-inner">
+        <div class="service-list">
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>90min Relaxation Massage</h4>
+              <div class="service-meta">1 hr, 30 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>120</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Relaxation Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>60min Relaxation Massage</h4>
+              <div class="service-meta">1 hr</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Relaxation Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>45min Relaxation Massage</h4>
+              <div class="service-meta">45 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Relaxation Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Focused Massage -->
+    <div class="category" data-cat="focused">
+      <button class="category-toggle" aria-expanded="false">
+        <h3>Focused Massage</h3>
+        <div class="category-meta">2 services <span class="price-range">NZ$55</span></div>
+        <span class="chevron">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="category-body"><div class="category-body-inner">
+        <div class="service-list">
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>30min Face and Head Massage</h4>
+              <div class="service-meta">30 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>55</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 30min Face and Head Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>30min Foot and Leg Massage</h4>
+              <div class="service-meta">30 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>55</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 30min Foot and Leg Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Gift Cards -->
+    <div class="giftcard-box">
+      <div class="gc-text">
+        <h4>Gift cards</h4>
+        <p>Treat yourself or a friend to future visits.</p>
       </div>
-      <div class="hero-visual">
-        <div class="hero-img-main"></div>
-        <div class="hero-img-sub"></div>
-        <div class="hero-rating">
-          <div class="num serif">5.0</div>
-          <div>
-            <div class="stars">★ ★ ★ ★ ★</div>
-            <div class="label">186 reviews</div>
-          </div>
-        </div>
+      <a href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener">Buy a gift card</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="approach">
+  <div class="approach-inner">
+    <h2 data-reveal>A different<br>kind of <em>quiet.</em></h2>
+    <div class="approach-grid">
+      <div class="approach-item" data-reveal>
+        <div class="num">— 01</div>
+        <h4>Holistic</h4>
+        <p>Whole-body, whole-person. Sessions that consider not just where you hurt, but how you arrived there.</p>
       </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="about-inner">
-        <div class="about-img" data-reveal></div>
-        <div data-reveal>
-          <div class="eyebrow">A note from your therapist</div>
-          <h2>Hi, I'm <em>Kati</em>.<br />I hold space for healing.</h2>
-          <p>
-            I'm the therapist behind Soul Healing Massage Therapy. I combine
-            relaxation, deep tissue, remedial, and holistic techniques to create
-            sessions tailored to what your body needs.
-          </p>
-          <p>
-            My aim is to offer a nurturing space where you can release tension,
-            reconnect with yourself, and leave feeling lighter and more
-            refreshed.
-          </p>
-          <div class="signature">
-            — I can't wait to support your well-being.
-          </div>
-        </div>
+      <div class="approach-item" data-reveal>
+        <div class="num">— 02</div>
+        <h4>Remedial</h4>
+        <p>Targeted, evidence-informed work for chronic tension, postural patterns and recovery.</p>
       </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services" id="services">
-      <div class="services-header">
-        <h2 data-reveal>
-          Sessions tailored to
-          <em style="color: var(--clay); font-style: italic">your</em> body.
-        </h2>
-        <p data-reveal>
-          Choose by payment type or technique. Every session is adapted to what
-          your body needs that day.
-        </p>
+      <div class="approach-item" data-reveal>
+        <div class="num">— 03</div>
+        <h4>Relaxation</h4>
+        <p>Slow, deliberate, nervous-system soothing. The kind of stillness most days don't make room for.</p>
       </div>
-
-      <div class="services-wrap" data-reveal>
-        <!-- Pay with Cash -->
-        <div class="category" data-cat="cash">
-          <button class="category-toggle" aria-expanded="false">
-            <h3>Pay with Cash</h3>
-            <div class="category-meta">
-              4 services <span class="price-range">NZ$55–120</span>
-            </div>
-            <span class="chevron">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span>
-          </button>
-          <div class="category-body">
-            <div class="category-body-inner">
-              <p class="category-note">
-                <strong>Payment with cash at the end of treatment.</strong>
-                Cancellations or reschedules require at least 24 hours notice.
-                Late cancellations or no-shows may incur the full treatment fee.
-                Thank you for understanding.
-              </p>
-              <div class="service-list">
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>90min Massage cash payment</h4>
-                    <div class="service-meta">1 hr, 30 min</div>
-                    <p class="service-desc">
-                      You can choose Deep Tissue Massage, Sports Massage,
-                      Relaxation Massage, Remedial Massage, Pregnancy Massage
-                      and Holistic Massage.
-                    </p>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>120
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 90min Massage cash payment">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>60min Massage cash payment</h4>
-                    <div class="service-meta">1 hr</div>
-                    <p class="service-desc">
-                      You can choose Deep Tissue Massage, Sports Massage,
-                      Relaxation Massage, Remedial Massage, Pregnancy Massage
-                      and Holistic Massage.
-                    </p>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>80
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 60min Massage cash payment">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>45min Massage cash payment</h4>
-                    <div class="service-meta">45 min</div>
-                    <p class="service-desc">
-                      You can choose Pregnancy Massage, Remedial Massage,
-                      Relaxation Massage, Sports Massage and Deep Tissue
-                      Massage.
-                    </p>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>68
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 45min Massage cash payment">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>30min Massage cash payment</h4>
-                    <div class="service-meta">30 min</div>
-                    <p class="service-desc">
-                      Focused massage: Back, neck and shoulder, or legs and
-                      foot, or head, neck and shoulder.
-                    </p>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>55
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 30min Massage cash payment">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- I have a Voucher Gift -->
-        <div class="category" data-cat="voucher">
-          <button class="category-toggle" aria-expanded="false">
-            <h3>I have a Voucher Gift</h3>
-            <div class="category-meta">
-              3 services <span class="price-range">NZ$68–120</span>
-            </div>
-            <span class="chevron">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span>
-          </button>
-          <div class="category-body">
-            <div class="category-body-inner">
-              <div class="service-list">
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>90min Massage with Voucher</h4>
-                    <div class="service-meta">1 hr, 30 min</div>
-                    <p class="service-desc">
-                      You can choose Deep Tissue Massage, Sports Massage,
-                      Relaxation Massage, Remedial Massage, Pregnancy Massage
-                      and Holistic Massage.
-                    </p>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>120
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 90min Massage with Voucher">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>60min Massage with Voucher</h4>
-                    <div class="service-meta">1 hr</div>
-                    <p class="service-desc">
-                      You can choose Deep Tissue Massage, Sports Massage,
-                      Relaxation Massage, Remedial Massage, Pregnancy Massage
-                      and Holistic Massage.
-                    </p>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>80
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 60min Massage with Voucher">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>45min Massage with Voucher</h4>
-                    <div class="service-meta">45 min</div>
-                    <p class="service-desc">
-                      You can choose Pregnancy Massage, Remedial Massage,
-                      Relaxation Massage, Sports Massage and Deep Tissue
-                      Massage.
-                    </p>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>68
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 45min Massage with Voucher">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Holistic Massage -->
-        <div class="category" data-cat="holistic">
-          <button class="category-toggle" aria-expanded="false">
-            <h3>Holistic Massage</h3>
-            <div class="category-meta">
-              2 services <span class="price-range">NZ$80–120</span>
-            </div>
-            <span class="chevron">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span>
-          </button>
-          <div class="category-body">
-            <div class="category-body-inner">
-              <div class="service-list">
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>90min Holistic Massage</h4>
-                    <div class="service-meta">1 hr, 30 min</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>120
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 90min Holistic Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>60min Holistic Massage</h4>
-                    <div class="service-meta">1 hr</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>80
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 60min Holistic Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pregnancy Massage -->
-        <div class="category" data-cat="pregnancy">
-          <button class="category-toggle" aria-expanded="false">
-            <h3>Pregnancy Massage</h3>
-            <div class="category-meta">
-              1 service <span class="price-range">NZ$68</span>
-            </div>
-            <span class="chevron">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span>
-          </button>
-          <div class="category-body">
-            <div class="category-body-inner">
-              <div class="service-list">
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>45min Pregnancy Massage</h4>
-                    <div class="service-meta">45 min</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>68
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 45min Pregnancy Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Remedial Massage -->
-        <div class="category" data-cat="remedial">
-          <button class="category-toggle" aria-expanded="false">
-            <h3>Remedial Massage</h3>
-            <div class="category-meta">
-              2 services <span class="price-range">NZ$68–80</span>
-            </div>
-            <span class="chevron">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span>
-          </button>
-          <div class="category-body">
-            <div class="category-body-inner">
-              <div class="service-list">
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>60min Remedial Massage</h4>
-                    <div class="service-meta">1 hr</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>80
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 60min Remedial Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>45min Remedial Massage</h4>
-                    <div class="service-meta">45 min</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>68
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 45min Remedial Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Relaxation Massage -->
-        <div class="category" data-cat="relaxation">
-          <button class="category-toggle" aria-expanded="false">
-            <h3>Relaxation Massage</h3>
-            <div class="category-meta">
-              3 services <span class="price-range">NZ$68–120</span>
-            </div>
-            <span class="chevron">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span>
-          </button>
-          <div class="category-body">
-            <div class="category-body-inner">
-              <div class="service-list">
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>90min Relaxation Massage</h4>
-                    <div class="service-meta">1 hr, 30 min</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>120
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 90min Relaxation Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>60min Relaxation Massage</h4>
-                    <div class="service-meta">1 hr</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>80
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 60min Relaxation Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>45min Relaxation Massage</h4>
-                    <div class="service-meta">45 min</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>68
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 45min Relaxation Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Focused Massage -->
-        <div class="category" data-cat="focused">
-          <button class="category-toggle" aria-expanded="false">
-            <h3>Focused Massage</h3>
-            <div class="category-meta">
-              2 services <span class="price-range">NZ$55</span>
-            </div>
-            <span class="chevron">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span>
-          </button>
-          <div class="category-body">
-            <div class="category-body-inner">
-              <div class="service-list">
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>30min Face and Head Massage</h4>
-                    <div class="service-meta">30 min</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>55
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 30min Face and Head Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="service-row">
-                  <div class="service-info">
-                    <h4>30min Foot and Leg Massage</h4>
-                    <div class="service-meta">30 min</div>
-                  </div>
-                  <div class="service-price-tag">
-                    <span class="currency">NZ$</span>55
-                  </div>
-                  <a
-                    class="service-book"
-                    href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Book 30min Foot and Leg Massage">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Gift Cards -->
-        <div class="giftcard-box">
-          <div class="gc-text">
-            <h4>Gift cards</h4>
-            <p>Treat yourself or a friend to future visits.</p>
-          </div>
-          <a
-            href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-            target="_blank"
-            rel="noopener"
-            >Buy a gift card</a
-          >
-        </div>
+      <div class="approach-item" data-reveal>
+        <div class="num">— 04</div>
+        <h4>Pregnancy</h4>
+        <p>Gentle, safe and supportive massage adapted to each trimester — care for you and the body changing for you.</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- APPROACH -->
-    <section class="approach">
-      <div class="approach-inner">
-        <h2 data-reveal>A different<br />kind of <em>quiet.</em></h2>
-        <div class="approach-grid">
-          <div class="approach-item" data-reveal>
-            <div class="num">— 01</div>
-            <h4>Holistic</h4>
-            <p>
-              Whole-body, whole-person. Sessions that consider not just where
-              you hurt, but how you arrived there.
-            </p>
-          </div>
-          <div class="approach-item" data-reveal>
-            <div class="num">— 02</div>
-            <h4>Remedial</h4>
-            <p>
-              Targeted, evidence-informed work for chronic tension, postural
-              patterns and recovery.
-            </p>
-          </div>
-          <div class="approach-item" data-reveal>
-            <div class="num">— 03</div>
-            <h4>Relaxation</h4>
-            <p>
-              Slow, deliberate, nervous-system soothing. The kind of stillness
-              most days don't make room for.
-            </p>
-          </div>
-          <div class="approach-item" data-reveal>
-            <div class="num">— 04</div>
-            <h4>Pregnancy</h4>
-            <p>
-              Gentle, safe and supportive massage adapted to each trimester —
-              care for you and the body changing for you.
-            </p>
-          </div>
-        </div>
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="reviews-header" data-reveal>
+    <h2>Words from <em>the table.</em></h2>
+    <div class="reviews-meta">
+      <span class="big serif">5.0</span>
+      <span>★ ★ ★ ★ ★ &nbsp;·&nbsp; 186 reviews on Fresha</span>
+    </div>
+  </div>
+  <div class="reviews-grid">
+
+    <div class="review" data-reveal>
+      <p class="review-text">The most incredible healing massage, I cannot recommend Kati highly enough. She's simply the best there is!</p>
+      <div class="review-author">
+        <div class="review-avatar">M</div>
+        <div class="review-name">Michelle G.</div>
+        <div class="review-stars">★ ★ ★ ★ ★</div>
       </div>
-    </section>
+    </div>
 
-    <!-- REVIEWS -->
-    <section class="reviews" id="reviews">
-      <div class="reviews-header" data-reveal>
-        <h2>Words from <em>the table.</em></h2>
-        <div class="reviews-meta">
-          <span class="big serif">5.0</span>
-          <span>★ ★ ★ ★ ★ &nbsp;·&nbsp; 186 reviews on Fresha</span>
-        </div>
+    <div class="review" data-reveal>
+      <p class="review-text">Can't get over how perfect her massage is… takes me to heaven each time.</p>
+      <div class="review-author">
+        <div class="review-avatar">F</div>
+        <div class="review-name">Franceli G.</div>
+        <div class="review-stars">★ ★ ★ ★ ★</div>
       </div>
-      <div class="reviews-grid">
-        <div class="review" data-reveal>
-          <p class="review-text">
-            The most incredible healing massage, I cannot recommend Kati highly
-            enough. She's simply the best there is!
-          </p>
-          <div class="review-author">
-            <div class="review-avatar">M</div>
-            <div class="review-name">Michelle G.</div>
-            <div class="review-stars">★ ★ ★ ★ ★</div>
-          </div>
-        </div>
+    </div>
 
-        <div class="review" data-reveal>
-          <p class="review-text">
-            Can't get over how perfect her massage is… takes me to heaven each
-            time.
-          </p>
-          <div class="review-author">
-            <div class="review-avatar">F</div>
-            <div class="review-name">Franceli G.</div>
-            <div class="review-stars">★ ★ ★ ★ ★</div>
-          </div>
-        </div>
-
-        <div class="review" data-reveal>
-          <p class="review-text">
-            Another lovely relaxing massage by Katiane. You're simply the best
-            massage therapist I have ever had.
-          </p>
-          <div class="review-author">
-            <div class="review-avatar">★</div>
-            <div class="review-name">Fresha client</div>
-            <div class="review-stars">★ ★ ★ ★ ★</div>
-          </div>
-        </div>
-
-        <div class="review" data-reveal>
-          <p class="review-text">
-            Kati is amazing — this was honestly the best massage I've ever had.
-            Thank you Kati, I will be back!
-          </p>
-          <div class="review-author">
-            <div class="review-avatar">★</div>
-            <div class="review-name">Fresha client</div>
-            <div class="review-stars">★ ★ ★ ★ ★</div>
-          </div>
-        </div>
-
-        <div class="review" data-reveal>
-          <p class="review-text">
-            Definitely soul healing! Loved the space and the massage.
-          </p>
-          <div class="review-author">
-            <div class="review-avatar">★</div>
-            <div class="review-name">Fresha client</div>
-            <div class="review-stars">★ ★ ★ ★ ★</div>
-          </div>
-        </div>
-
-        <div class="review" data-reveal>
-          <p class="review-text">
-            Thanks Kati. My shoulder is working and feeling much better since
-            yesterday's massage. You are brilliant!
-          </p>
-          <div class="review-author">
-            <div class="review-avatar">★</div>
-            <div class="review-name">Fresha client</div>
-            <div class="review-stars">★ ★ ★ ★ ★</div>
-          </div>
-        </div>
+    <div class="review" data-reveal>
+      <p class="review-text">Another lovely relaxing massage by Katiane. You're simply the best massage therapist I have ever had.</p>
+      <div class="review-author">
+        <div class="review-avatar">★</div>
+        <div class="review-name">Fresha client</div>
+        <div class="review-stars">★ ★ ★ ★ ★</div>
       </div>
-    </section>
+    </div>
 
-    <!-- VISIT -->
-    <section class="visit" id="visit">
-      <div class="visit-inner">
-        <div data-reveal>
-          <h2>Find your way <em>here.</em></h2>
-          <div class="visit-block">
-            <h4>Studio</h4>
-            <p>
-              632 Grenada Street<br />Papamoa Beach, Mount Maunganui<br />Bay of
-              Plenty 3118
-            </p>
-          </div>
-          <div class="visit-block">
-            <h4>Getting here</h4>
-            <p
-              style="
-                font-size: 1rem;
-                font-family: &quot;Inter Tight&quot;, sans-serif;
-                font-weight: 300;
-                color: var(--ink-soft);
-                line-height: 1.7;
-              ">
-              Parking on site · Near public transport · Verified Fresha business
-            </p>
-            <a
-              class="btn-ghost"
-              href="https://maps.google.com/?daddr=632%20Grenada%20Street%2C%20Mount%20Maunganui%2C%203118%2C%20Bay%20Of%20Plenty"
-              target="_blank"
-              rel="noopener"
-              style="display: inline-block; margin-top: 1rem"
-              >Get directions →</a
-            >
-          </div>
-          <div class="features">
-            <span class="feature">Instant confirmation</span>
-            <span class="feature">Pay by app</span>
-            <span class="feature">Woman-owned</span>
-            <span class="feature">Environmentally friendly</span>
-          </div>
-        </div>
-
-        <div data-reveal>
-          <h2>Opening <em>hours.</em></h2>
-          <ul class="hours-list">
-            <li>
-              <span class="day">Monday</span
-              ><span class="time">10:30 AM – 6:30 PM</span>
-            </li>
-            <li>
-              <span class="day">Tuesday</span
-              ><span class="time">10:30 AM – 6:30 PM</span>
-            </li>
-            <li>
-              <span class="day">Wednesday</span
-              ><span class="time">10:30 AM – 6:30 PM</span>
-            </li>
-            <li>
-              <span class="day">Thursday</span
-              ><span class="time">10:30 AM – 6:30 PM</span>
-            </li>
-            <li>
-              <span class="day">Friday</span><span class="closed">Closed</span>
-            </li>
-            <li>
-              <span class="day">Saturday</span
-              ><span class="closed">Closed</span>
-            </li>
-            <li>
-              <span class="day">Sunday</span><span class="closed">Closed</span>
-            </li>
-          </ul>
-        </div>
+    <div class="review" data-reveal>
+      <p class="review-text">Kati is amazing — this was honestly the best massage I've ever had. Thank you Kati, I will be back!</p>
+      <div class="review-author">
+        <div class="review-avatar">★</div>
+        <div class="review-name">Fresha client</div>
+        <div class="review-stars">★ ★ ★ ★ ★</div>
       </div>
-    </section>
+    </div>
 
-    <!-- CTA -->
-    <section class="cta">
-      <div class="cta-inner">
-        <h2 data-reveal>
-          Your body has been<br />waiting. <em>Let's begin.</em>
-        </h2>
-        <p data-reveal>
-          All bookings, gift cards and rebooking handled through Fresha —
-          instant confirmation, no calls needed.
-        </p>
-        <a
-          class="btn-primary"
-          href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z"
-          target="_blank"
-          rel="noopener"
-          data-reveal>
-          Book your session
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2">
-            <path d="M5 12h14M13 5l7 7-7 7" />
-          </svg>
-        </a>
+    <div class="review" data-reveal>
+      <p class="review-text">Definitely soul healing! Loved the space and the massage.</p>
+      <div class="review-author">
+        <div class="review-avatar">★</div>
+        <div class="review-name">Fresha client</div>
+        <div class="review-stars">★ ★ ★ ★ ★</div>
       </div>
-    </section>
+    </div>
 
-    <footer>
-      <div class="footer-inner">
-        <div class="serif">Soul Healing <em>Massage</em> Therapy</div>
-        <div>
-          © 2026 · 632 Grenada Street, Mount Maunganui · Design by Vicente
-          Fernandes
-        </div>
+    <div class="review" data-reveal>
+      <p class="review-text">Thanks Kati. My shoulder is working and feeling much better since yesterday's massage. You are brilliant!</p>
+      <div class="review-author">
+        <div class="review-avatar">★</div>
+        <div class="review-name">Fresha client</div>
+        <div class="review-stars">★ ★ ★ ★ ★</div>
       </div>
-    </footer>
+    </div>
 
-    <!--
-  ════════════════════════════════════════════════════════════════════════
-  ⚠ TODO: REPLACE WHATSAPP NUMBER BEFORE GOING LIVE
-  ════════════════════════════════════════════════════════════════════════
-  In the link below, replace "64272740992" with Kati's actual WhatsApp
-  number in international format (no spaces, no plus sign, no dashes).
-  Example for a New Zealand mobile: 64211234567
-  Format: country_code + number_without_leading_zero
-  ════════════════════════════════════════════════════════════════════════
--->
-    <a
-      class="wa-float"
-      href="https://wa.me/64272740992?text=Hi%20Kati%2C%20I%20found%20you%20through%20your%20website%20and%20I%27d%20like%20to%20book%20a%20massage.%20Could%20you%20help%20me%3F"
-      target="_blank"
-      rel="noopener"
-      aria-label="Chat with us on WhatsApp">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path
-          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413" />
-      </svg>
-      <span class="wa-label">Message us</span>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit">
+  <div class="visit-inner">
+    <div data-reveal>
+      <h2>Find your way <em>here.</em></h2>
+      <div class="visit-block">
+        <h4>Studio</h4>
+        <p>632 Grenada Street<br>Papamoa Beach, Mount Maunganui<br>Bay of Plenty 3118</p>
+      </div>
+      <div class="visit-block">
+        <h4>Getting here</h4>
+        <p style="font-size:1rem;font-family:'Inter Tight',sans-serif;font-weight:300;color:var(--ink-soft);line-height:1.7">Parking on site · Near public transport · Verified Fresha business</p>
+        <a class="btn-ghost" href="https://maps.google.com/?daddr=632%20Grenada%20Street%2C%20Mount%20Maunganui%2C%203118%2C%20Bay%20Of%20Plenty" target="_blank" rel="noopener" style="display:inline-block;margin-top:1rem">Get directions →</a>
+      </div>
+      <div class="features">
+        <span class="feature">Instant confirmation</span>
+        <span class="feature">Pay by app</span>
+        <span class="feature">Woman-owned</span>
+        <span class="feature">Environmentally friendly</span>
+      </div>
+    </div>
+
+    <div data-reveal>
+      <h2>Opening <em>hours.</em></h2>
+      <ul class="hours-list">
+        <li><span class="day">Monday</span><span class="time">10:30 AM – 6:30 PM</span></li>
+        <li><span class="day">Tuesday</span><span class="time">10:30 AM – 6:30 PM</span></li>
+        <li><span class="day">Wednesday</span><span class="time">10:30 AM – 6:30 PM</span></li>
+        <li><span class="day">Thursday</span><span class="time">10:30 AM – 6:30 PM</span></li>
+        <li><span class="day">Friday</span><span class="closed">Closed</span></li>
+        <li><span class="day">Saturday</span><span class="closed">Closed</span></li>
+        <li><span class="day">Sunday</span><span class="closed">Closed</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-inner">
+    <h2 data-reveal>Your body has been<br>waiting. <em>Let's begin.</em></h2>
+    <p data-reveal>All bookings, gift cards and rebooking handled through Fresha — instant confirmation, no calls needed.</p>
+    <a class="btn-primary" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" data-reveal>
+      Book your session
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
     </a>
+  </div>
+</section>
 
-    <script>
-      // Reveal on scroll
-      const obs = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("in");
-              obs.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.12 },
-      );
-      document
-        .querySelectorAll("[data-reveal]")
-        .forEach((el) => obs.observe(el));
+<footer>
+  <div class="footer-inner">
+    <div class="serif">Soul Healing <em>Massage</em> Therapy</div>
+    <div>© 2026 · 632 Grenada Street, Mount Maunganui · Bookings via Fresha</div>
+  </div>
+</footer>
 
-      // Accordion toggle for services
-      document.querySelectorAll(".category-toggle").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const cat = btn.closest(".category");
-          const isOpen = cat.classList.toggle("open");
-          btn.setAttribute("aria-expanded", isOpen);
-        });
-      });
-    </script>
-  </body>
+<!-- WhatsApp floating button. Number is +64 27 274 0992 (Kati). To update, edit the wa.me/ URL below. -->
+<a class="wa-float" href="https://wa.me/64272740992?text=Hi%20Kati%2C%20I%20found%20you%20through%20your%20website%20and%20I%27d%20like%20to%20book%20a%20massage.%20Could%20you%20help%20me%3F" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+  </svg>
+  <span class="wa-label">Message us</span>
+</a>
+
+<script>
+// Reveal on scroll
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
+},{threshold:0.12});
+document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
+
+// Accordion toggle for services
+document.querySelectorAll('.category-toggle').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const cat = btn.closest('.category');
+    const isOpen = cat.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen);
+  });
+});
+</script>
+</body>
 </html>
