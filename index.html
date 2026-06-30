@@ -818,16 +818,19 @@ footer{
 
 /* ---------- PRICE ADJUSTMENT BANNER ---------- */
 .price-banner{
-  background:linear-gradient(135deg,rgba(184,103,74,0.09) 0%,rgba(217,154,122,0.05) 100%);
+  position:fixed;top:5.75rem;left:0;right:0;
+  background:linear-gradient(135deg,rgba(244,237,225,0.92) 0%,rgba(244,237,225,0.95) 100%);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
   border-bottom:1px solid rgba(184,103,74,0.18);
   padding:0.85rem 2rem;
-  position:relative;z-index:5;
-  transition:opacity .3s ease, max-height .4s ease, padding .4s ease;
-  max-height:200px;overflow:hidden;
+  z-index:90;
+  transition:transform .45s ease, opacity .3s ease;
+  transform:translateY(0);
 }
 .price-banner.hidden{
-  opacity:0;max-height:0;padding-top:0;padding-bottom:0;border-bottom-width:0;
-  pointer-events:none;
+  transform:translateY(-110%);
+  opacity:0;pointer-events:none;
 }
 .price-banner-inner{
   max-width:1200px;margin:0 auto;
@@ -968,6 +971,7 @@ footer{
   </div>
   <a class="nav-cta" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener">Book now</a>
 </nav>
+</div>
 
 <!-- Price adjustment notice -->
 <div class="price-banner" id="priceBanner" role="region" aria-label="Price update notice">
@@ -1560,7 +1564,7 @@ const obs = new IntersectionObserver((entries)=>{
 },{threshold:0.12});
 document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
 
-// Price adjustment banner — dismiss with daily cookie
+// Price adjustment banner — dismiss with daily cookie + auto-hide on scroll
 (function(){
   const COOKIE = 'sh_price_banner_dismissed';
   const banner = document.getElementById('priceBanner');
@@ -1581,6 +1585,19 @@ document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
   }
   const closeBtn = document.getElementById('priceBannerClose');
   if(closeBtn) closeBtn.addEventListener('click', dismiss);
+
+  // Auto-hide quando o usuário rola pra baixo
+  let scrollHidden = false;
+  window.addEventListener('scroll', () => {
+    if(banner.classList.contains('hidden')) return; // já fechado manualmente
+    if(window.scrollY > 80 && !scrollHidden){
+      banner.classList.add('hidden');
+      scrollHidden = true;
+    } else if(window.scrollY <= 10 && scrollHidden){
+      banner.classList.remove('hidden');
+      scrollHidden = false;
+    }
+  }, { passive: true });
 })();
 
 // Accordion toggle for services
