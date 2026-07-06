@@ -53,7 +53,7 @@
     "https://soulhealingmassage.co.nz/images/hero-sub.jpg"
   ],
   "logo": "https://soulhealingmassage.co.nz/images/logo.png",
-  "priceRange": "NZ$55–NZ$120",
+  "priceRange": "NZ$60–NZ$130",
   "currenciesAccepted": "NZD",
   "paymentAccepted": "Cash, Voucher",
   "address": {
@@ -87,13 +87,17 @@
     "name": "Massage services",
     "itemListElement": [
       {"@type":"Offer","name":"Winter Ritual","description":"Hot stones, warm towels, winter tea, Reiki energy balancing","price":"90","priceCurrency":"NZD"},
-      {"@type":"Offer","name":"90min Massage","description":"Choose Deep Tissue, Sports, Relaxation, Remedial, Pregnancy or Holistic","price":"120","priceCurrency":"NZD"},
-      {"@type":"Offer","name":"60min Massage","description":"Choose Deep Tissue, Sports, Relaxation, Remedial, Pregnancy or Holistic","price":"80","priceCurrency":"NZD"},
-      {"@type":"Offer","name":"45min Massage","description":"Choose Pregnancy, Remedial, Relaxation, Sports or Deep Tissue","price":"68","priceCurrency":"NZD"},
-      {"@type":"Offer","name":"30min Focused Massage","description":"Back/neck/shoulder, legs/foot, or head/neck/shoulder","price":"55","priceCurrency":"NZD"},
-      {"@type":"Offer","name":"45min Pregnancy Massage","price":"68","priceCurrency":"NZD"},
-      {"@type":"Offer","name":"30min Face and Head Massage","price":"55","priceCurrency":"NZD"},
-      {"@type":"Offer","name":"30min Foot and Leg Massage","price":"55","priceCurrency":"NZD"}
+      {"@type":"Offer","name":"90min Massage","description":"Choose Deep Tissue, Sports, Relaxation, Remedial, Pregnancy or Holistic","price":"130","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"60min Massage","description":"Choose Deep Tissue, Sports, Relaxation, Remedial, Pregnancy or Holistic","price":"90","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"45min Massage","description":"Choose Pregnancy, Remedial, Relaxation, Sports or Deep Tissue","price":"75","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"30min Focused Massage","description":"Back/neck/shoulder, legs/foot, or head/neck/shoulder","price":"60","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"60min Pregnancy Massage","price":"90","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"45min Pregnancy Massage","price":"75","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"30min Face and Head Massage","price":"60","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"30min Foot and Leg Massage","price":"60","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"30min Back/Neck and Shoulder","price":"60","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"Sports Massage","description":"45min NZ$75, 60min NZ$90, 90min NZ$130","priceCurrency":"NZD"},
+      {"@type":"Offer","name":"Deep Tissue Massage","description":"45min NZ$75, 60min NZ$90, 90min NZ$130","priceCurrency":"NZD"}
     ]
   },
   "knowsAbout": ["Holistic Massage","Remedial Massage","Relaxation Massage","Pregnancy Massage","Deep Tissue Massage","Sports Massage","Hot Stone Massage","Reiki"],
@@ -816,65 +820,6 @@ footer{
   50%{transform:scale(1.5);opacity:.55}
 }
 
-/* ---------- PRICE ADJUSTMENT BANNER ---------- */
-.price-banner{
-  position:fixed;top:5.75rem;left:0;right:0;
-  background:linear-gradient(135deg,rgba(244,237,225,0.92) 0%,rgba(244,237,225,0.95) 100%);
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter:blur(10px);
-  border-bottom:1px solid rgba(184,103,74,0.18);
-  padding:0.85rem 2rem;
-  z-index:90;
-  transition:transform .45s ease, opacity .3s ease;
-  transform:translateY(0);
-}
-.price-banner.hidden{
-  transform:translateY(-110%);
-  opacity:0;pointer-events:none;
-}
-.price-banner-inner{
-  max-width:1200px;margin:0 auto;
-  display:flex;align-items:center;gap:1.5rem;
-}
-.price-banner-icon{
-  flex-shrink:0;width:32px;height:32px;
-  display:flex;align-items:center;justify-content:center;
-  color:var(--clay);
-}
-.price-banner-text{
-  flex:1;font-size:0.88rem;color:var(--ink);line-height:1.5;
-}
-.price-banner-text strong{font-weight:500;color:var(--clay)}
-.price-banner-cta{
-  display:inline-flex;align-items:center;gap:0.4rem;
-  color:var(--clay);text-decoration:none;
-  font-size:0.85rem;font-weight:500;letter-spacing:0.01em;
-  white-space:nowrap;flex-shrink:0;
-  border-bottom:1px solid var(--clay);
-  padding:0 0 2px;
-  transition:color .25s, border-bottom-color .25s;
-}
-.price-banner-cta:hover{color:var(--ink);border-bottom-color:var(--ink)}
-.price-banner-cta svg{transition:transform .3s; stroke:currentColor}
-.price-banner-cta:hover svg{transform:translateX(3px)}
-.price-banner-close{
-  flex-shrink:0;width:30px;height:30px;
-  background:transparent;border:none;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:50%;color:var(--ink-soft);
-  font-size:1.3rem;line-height:1;
-  transition:background .25s, color .25s;
-}
-.price-banner-close:hover{background:rgba(43,42,38,0.08);color:var(--ink)}
-@media(max-width:720px){
-  .price-banner{padding:0.75rem 1rem}
-  .price-banner-inner{gap:0.6rem;flex-wrap:wrap}
-  .price-banner-icon{display:none}
-  .price-banner-text{font-size:0.78rem;flex-basis:calc(100% - 40px)}
-  .price-banner-close{order:2}
-  .price-banner-cta{font-size:0.78rem;order:3;flex-basis:auto;margin-top:0.2rem}
-}
-
 /* ---------- WHATSAPP FLOATING BUTTON ---------- */
 .wa-float{
   position:fixed;
@@ -973,28 +918,6 @@ footer{
 </nav>
 </div>
 
-<!-- Price adjustment notice -->
-<div class="price-banner" id="priceBanner" role="region" aria-label="Price update notice">
-  <div class="price-banner-inner">
-    <div class="price-banner-icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22">
-        <rect x="3" y="5" width="18" height="16" rx="2"/>
-        <line x1="3" y1="10" x2="21" y2="10"/>
-        <line x1="8" y1="3" x2="8" y2="7"/>
-        <line x1="16" y1="3" x2="16" y2="7"/>
-      </svg>
-    </div>
-    <div class="price-banner-text">
-      <strong>A gentle update.</strong> After more than two years of steady pricing, a small adjustment from <strong>6 July 2026</strong>. Appointments booked before this date keep the current pricing.
-    </div>
-    <a class="price-banner-cta" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener">
-      Book before the change
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-    </a>
-    <button class="price-banner-close" id="priceBannerClose" type="button" aria-label="Dismiss notice">&times;</button>
-  </div>
-</div>
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
@@ -1081,7 +1004,7 @@ footer{
     <div class="category" data-cat="cash">
       <button class="category-toggle" aria-expanded="false">
         <h3>Pay with Cash</h3>
-        <div class="category-meta">4 services <span class="price-range">NZ$55–120</span></div>
+        <div class="category-meta">4 services <span class="price-range">NZ$60–130</span></div>
         <span class="chevron">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </span>
@@ -1096,7 +1019,7 @@ footer{
               <div class="service-meta">1 hr, 30 min</div>
               <p class="service-desc">You can choose Deep Tissue Massage, Sports Massage, Relaxation Massage, Remedial Massage, Pregnancy Massage and Holistic Massage.</p>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>120</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>130</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Massage cash payment">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1108,7 +1031,7 @@ footer{
               <div class="service-meta">1 hr</div>
               <p class="service-desc">You can choose Deep Tissue Massage, Sports Massage, Relaxation Massage, Remedial Massage, Pregnancy Massage and Holistic Massage.</p>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>90</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Massage cash payment">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1120,7 +1043,7 @@ footer{
               <div class="service-meta">45 min</div>
               <p class="service-desc">You can choose Pregnancy Massage, Remedial Massage, Relaxation Massage, Sports Massage and Deep Tissue Massage.</p>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>75</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Massage cash payment">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1132,7 +1055,7 @@ footer{
               <div class="service-meta">30 min</div>
               <p class="service-desc">Focused massage: Back, neck and shoulder, or legs and foot, or head, neck and shoulder.</p>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>55</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>60</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 30min Massage cash payment">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1146,7 +1069,7 @@ footer{
     <div class="category" data-cat="voucher">
       <button class="category-toggle" aria-expanded="false">
         <h3>I have a Voucher Gift</h3>
-        <div class="category-meta">3 services <span class="price-range">NZ$68–120</span></div>
+        <div class="category-meta">4 services <span class="price-range">NZ$60–130</span></div>
         <span class="chevron">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </span>
@@ -1160,7 +1083,7 @@ footer{
               <div class="service-meta">1 hr, 30 min</div>
               <p class="service-desc">You can choose Deep Tissue Massage, Sports Massage, Relaxation Massage, Remedial Massage, Pregnancy Massage and Holistic Massage.</p>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>120</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>130</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Massage with Voucher">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1172,7 +1095,7 @@ footer{
               <div class="service-meta">1 hr</div>
               <p class="service-desc">You can choose Deep Tissue Massage, Sports Massage, Relaxation Massage, Remedial Massage, Pregnancy Massage and Holistic Massage.</p>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>90</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Massage with Voucher">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1184,8 +1107,19 @@ footer{
               <div class="service-meta">45 min</div>
               <p class="service-desc">You can choose Pregnancy Massage, Remedial Massage, Relaxation Massage, Sports Massage and Deep Tissue Massage.</p>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>75</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Massage with Voucher">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>30min Massage Gift Voucher</h4>
+              <div class="service-meta">30 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>60</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 30min Massage Gift Voucher">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
           </div>
@@ -1198,7 +1132,7 @@ footer{
     <div class="category" data-cat="holistic">
       <button class="category-toggle" aria-expanded="false">
         <h3>Holistic Massage</h3>
-        <div class="category-meta">2 services <span class="price-range">NZ$80–120</span></div>
+        <div class="category-meta">2 services <span class="price-range">NZ$90–130</span></div>
         <span class="chevron">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </span>
@@ -1211,7 +1145,7 @@ footer{
               <h4>90min Holistic Massage</h4>
               <div class="service-meta">1 hr, 30 min</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>120</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>130</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Holistic Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1222,7 +1156,7 @@ footer{
               <h4>60min Holistic Massage</h4>
               <div class="service-meta">1 hr</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>90</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Holistic Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1236,7 +1170,7 @@ footer{
     <div class="category" data-cat="pregnancy">
       <button class="category-toggle" aria-expanded="false">
         <h3>Pregnancy Massage</h3>
-        <div class="category-meta">1 service <span class="price-range">NZ$68</span></div>
+        <div class="category-meta">2 services <span class="price-range">NZ$75–90</span></div>
         <span class="chevron">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </span>
@@ -1246,10 +1180,22 @@ footer{
 
           <div class="service-row">
             <div class="service-info">
+              <h4>60min Pregnancy Massage</h4>
+              <div class="service-meta">1 hr</div>
+              <p class="service-desc">Experience soothing relief and relaxation tailored for expectant mothers. This session focuses on alleviating discomfort, reducing stress, and promoting overall well-being.</p>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>90</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Pregnancy Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
               <h4>45min Pregnancy Massage</h4>
               <div class="service-meta">45 min</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>75</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Pregnancy Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1263,7 +1209,7 @@ footer{
     <div class="category" data-cat="remedial">
       <button class="category-toggle" aria-expanded="false">
         <h3>Remedial Massage</h3>
-        <div class="category-meta">2 services <span class="price-range">NZ$68–80</span></div>
+        <div class="category-meta">2 services <span class="price-range">NZ$75–90</span></div>
         <span class="chevron">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </span>
@@ -1276,7 +1222,7 @@ footer{
               <h4>60min Remedial Massage</h4>
               <div class="service-meta">1 hr</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>90</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Remedial Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1287,7 +1233,7 @@ footer{
               <h4>45min Remedial Massage</h4>
               <div class="service-meta">45 min</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>75</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Remedial Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1301,7 +1247,7 @@ footer{
     <div class="category" data-cat="relaxation">
       <button class="category-toggle" aria-expanded="false">
         <h3>Relaxation Massage</h3>
-        <div class="category-meta">3 services <span class="price-range">NZ$68–120</span></div>
+        <div class="category-meta">3 services <span class="price-range">NZ$75–130</span></div>
         <span class="chevron">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </span>
@@ -1314,7 +1260,7 @@ footer{
               <h4>90min Relaxation Massage</h4>
               <div class="service-meta">1 hr, 30 min</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>120</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>130</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Relaxation Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1325,7 +1271,7 @@ footer{
               <h4>60min Relaxation Massage</h4>
               <div class="service-meta">1 hr</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>80</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>90</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Relaxation Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1336,7 +1282,7 @@ footer{
               <h4>45min Relaxation Massage</h4>
               <div class="service-meta">45 min</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>68</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>75</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Relaxation Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1350,7 +1296,7 @@ footer{
     <div class="category" data-cat="focused">
       <button class="category-toggle" aria-expanded="false">
         <h3>Focused Massage</h3>
-        <div class="category-meta">2 services <span class="price-range">NZ$55</span></div>
+        <div class="category-meta">3 services <span class="price-range">NZ$60</span></div>
         <span class="chevron">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </span>
@@ -1363,7 +1309,7 @@ footer{
               <h4>30min Face and Head Massage</h4>
               <div class="service-meta">30 min</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>55</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>60</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 30min Face and Head Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
@@ -1374,8 +1320,118 @@ footer{
               <h4>30min Foot and Leg Massage</h4>
               <div class="service-meta">30 min</div>
             </div>
-            <div class="service-price-tag"><span class="currency">NZ$</span>55</div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>60</div>
             <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 30min Foot and Leg Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>30min Back/Neck and Shoulder</h4>
+              <div class="service-meta">30 min</div>
+              <p class="service-desc">Enjoy a massage focused on tension relief where specific areas of your body will be prioritized.</p>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>60</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 30min Back/Neck and Shoulder Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Sports Massage -->
+    <div class="category" data-cat="sports">
+      <button class="category-toggle" aria-expanded="false">
+        <h3>Sports Massage</h3>
+        <div class="category-meta">3 services <span class="price-range">NZ$75–130</span></div>
+        <span class="chevron">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="category-body"><div class="category-body-inner">
+        <div class="service-list">
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>90min Sports Massage</h4>
+              <div class="service-meta">1 hr, 30 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>130</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Sports Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>60min Sports Massage</h4>
+              <div class="service-meta">1 hr</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>90</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Sports Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>45min Sports Massage</h4>
+              <div class="service-meta">45 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>75</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Sports Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div></div>
+    </div>
+
+    <!-- Deep Tissue Massage -->
+    <div class="category" data-cat="deep-tissue">
+      <button class="category-toggle" aria-expanded="false">
+        <h3>Deep Tissue Massage</h3>
+        <div class="category-meta">3 services <span class="price-range">NZ$75–130</span></div>
+        <span class="chevron">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </span>
+      </button>
+      <div class="category-body"><div class="category-body-inner">
+        <div class="service-list">
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>90min Deep Tissue Massage</h4>
+              <div class="service-meta">1 hr, 30 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>130</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 90min Deep Tissue Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>60min Deep Tissue Massage</h4>
+              <div class="service-meta">1 hr</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>90</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 60min Deep Tissue Massage">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </a>
+          </div>
+
+          <div class="service-row">
+            <div class="service-info">
+              <h4>45min Deep Tissue Massage</h4>
+              <div class="service-meta">45 min</div>
+            </div>
+            <div class="service-price-tag"><span class="currency">NZ$</span>75</div>
+            <a class="service-book" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener" aria-label="Book 45min Deep Tissue Massage">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
             </a>
           </div>
@@ -1563,42 +1619,6 @@ const obs = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
 },{threshold:0.12});
 document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
-
-// Price adjustment banner — dismiss with daily cookie + auto-hide on scroll
-(function(){
-  const COOKIE = 'sh_price_banner_dismissed';
-  const banner = document.getElementById('priceBanner');
-  if(!banner) return;
-
-  function hasDismissed(){
-    return document.cookie.split('; ').some(c => c.startsWith(COOKIE + '='));
-  }
-  function dismiss(){
-    const now = new Date();
-    const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0);
-    document.cookie = COOKIE + '=1; expires=' + midnight.toUTCString() + '; path=/; SameSite=Lax';
-    banner.classList.add('hidden');
-  }
-
-  if(hasDismissed()){
-    banner.classList.add('hidden');
-  }
-  const closeBtn = document.getElementById('priceBannerClose');
-  if(closeBtn) closeBtn.addEventListener('click', dismiss);
-
-  // Auto-hide quando o usuário rola pra baixo
-  let scrollHidden = false;
-  window.addEventListener('scroll', () => {
-    if(banner.classList.contains('hidden')) return; // já fechado manualmente
-    if(window.scrollY > 80 && !scrollHidden){
-      banner.classList.add('hidden');
-      scrollHidden = true;
-    } else if(window.scrollY <= 10 && scrollHidden){
-      banner.classList.remove('hidden');
-      scrollHidden = false;
-    }
-  }, { passive: true });
-})();
 
 // Accordion toggle for services
 document.querySelectorAll('.category-toggle').forEach(btn=>{
