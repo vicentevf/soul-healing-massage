@@ -820,6 +820,63 @@ footer{
   50%{transform:scale(1.5);opacity:.55}
 }
 
+/* ---------- WINTER TOAST (small reminder popup) ---------- */
+.winter-toast{
+  position:fixed;
+  bottom:1.5rem;left:1.5rem;
+  width:340px;max-width:calc(100vw - 3rem);
+  background:#fff;border-radius:14px;
+  padding:1.15rem 1.35rem 1.25rem;
+  box-shadow:0 15px 35px -10px rgba(43,42,38,0.28), 0 3px 8px rgba(43,42,38,0.06);
+  border-top:3px solid var(--clay);
+  z-index:90;
+  transform:translateY(calc(100% + 3rem));
+  opacity:0;pointer-events:none;
+  transition:transform .55s cubic-bezier(.2,.8,.2,1), opacity .4s ease;
+}
+.winter-toast.visible{
+  transform:translateY(0);opacity:1;pointer-events:auto;
+}
+.winter-toast-close{
+  position:absolute;top:0.6rem;right:0.6rem;
+  width:28px;height:28px;
+  background:transparent;border:none;cursor:pointer;
+  font-size:1.2rem;line-height:1;color:var(--ink-soft);
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;
+  transition:background .25s, color .25s;
+}
+.winter-toast-close:hover{background:rgba(43,42,38,0.08);color:var(--ink)}
+.winter-toast-eyebrow{
+  display:flex;align-items:center;gap:0.5rem;
+  font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;
+  color:var(--clay);font-weight:500;
+  margin-bottom:0.55rem;
+}
+.winter-toast-eyebrow svg{width:14px;height:14px}
+.winter-toast-text{
+  font-size:0.88rem;line-height:1.55;color:var(--ink);
+  margin:0 0 0.85rem;
+}
+.winter-toast-text strong{color:var(--clay);font-weight:500}
+.winter-toast-cta{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  color:var(--clay);text-decoration:none;
+  font-size:0.82rem;font-weight:500;letter-spacing:0.01em;
+  border-bottom:1px solid var(--clay);
+  padding:0 0 2px;
+  transition:color .25s, border-bottom-color .25s;
+}
+.winter-toast-cta:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.winter-toast-cta svg{transition:transform .3s;stroke:currentColor}
+.winter-toast-cta:hover svg{transform:translateX(3px)}
+@media(max-width:520px){
+  .winter-toast{
+    bottom:1rem;left:1rem;right:1rem;width:auto;
+    padding:1rem 1.15rem 1.05rem;
+  }
+}
+
 /* ---------- WHATSAPP FLOATING BUTTON ---------- */
 .wa-float{
   position:fixed;
@@ -1605,6 +1662,22 @@ footer{
   </div>
 </footer>
 
+<!-- Winter Ritual reminder toast (small popup) -->
+<div class="winter-toast" id="winterToast" role="alert" aria-live="polite" aria-hidden="true">
+  <button class="winter-toast-close" id="winterToastClose" type="button" aria-label="Dismiss reminder">&times;</button>
+  <div class="winter-toast-eyebrow">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/></svg>
+    Winter Ritual
+  </div>
+  <p class="winter-toast-text">
+    Bookings close <strong>26 July 2026</strong>. After that, this seasonal experience is gone until next winter.
+  </p>
+  <a class="winter-toast-cta" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener">
+    Book before it ends
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
 <!-- WhatsApp floating button. Number is +64 27 274 0992 (Kati). To update, edit the wa.me/ URL below. -->
 <a class="wa-float" href="https://wa.me/64272740992?text=Hi%20Kati%2C%20I%20found%20you%20through%20your%20website%20and%20I%27d%20like%20to%20book%20a%20massage.%20Could%20you%20help%20me%3F" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -1619,6 +1692,33 @@ const obs = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
 },{threshold:0.12});
 document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
+
+// Winter Ritual reminder toast — 1x per day cookie
+(function(){
+  const COOKIE = 'sh_winter_toast_dismissed';
+  const toast = document.getElementById('winterToast');
+  if(!toast) return;
+
+  function hasDismissed(){
+    return document.cookie.split('; ').some(c => c.startsWith(COOKIE + '='));
+  }
+  function dismiss(){
+    const now = new Date();
+    const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0);
+    document.cookie = COOKIE + '=1; expires=' + midnight.toUTCString() + '; path=/; SameSite=Lax';
+    toast.classList.remove('visible');
+    toast.setAttribute('aria-hidden', 'true');
+  }
+
+  if(!hasDismissed()){
+    setTimeout(() => {
+      toast.classList.add('visible');
+      toast.setAttribute('aria-hidden', 'false');
+    }, 2000);
+  }
+  const closeBtn = document.getElementById('winterToastClose');
+  if(closeBtn) closeBtn.addEventListener('click', dismiss);
+})();
 
 // Accordion toggle for services
 document.querySelectorAll('.category-toggle').forEach(btn=>{
