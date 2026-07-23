@@ -820,61 +820,6 @@ footer{
   50%{transform:scale(1.5);opacity:.55}
 }
 
-/* ---------- ANNIVERSARY POPUP (6 YEARS) ---------- */
-.anniversary-popup{
-  position:fixed;inset:0;z-index:1000;
-  background:rgba(43,42,38,0.6);
-  backdrop-filter:blur(8px);
-  -webkit-backdrop-filter:blur(8px);
-  display:flex;align-items:center;justify-content:center;
-  padding:1.5rem;
-  opacity:0;pointer-events:none;
-  transition:opacity .5s ease;
-}
-.anniversary-popup.visible{opacity:1;pointer-events:auto}
-.anniversary-card{
-  position:relative;
-  background:#fff;
-  border-radius:20px;
-  padding:2rem 2rem 1.75rem;
-  max-width:520px;width:100%;
-  text-align:center;
-  box-shadow:0 30px 80px -20px rgba(43,42,38,0.5);
-  transform:translateY(30px) scale(.94);
-  transition:transform .6s cubic-bezier(.2,.8,.2,1);
-}
-.anniversary-popup.visible .anniversary-card{transform:translateY(0) scale(1)}
-.anniversary-close{
-  position:absolute;top:1rem;right:1rem;
-  width:36px;height:36px;
-  background:rgba(255,255,255,0.9);border:none;
-  font-size:1.4rem;line-height:1;color:var(--ink-soft);
-  cursor:pointer;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  transition:background .25s, color .25s;
-  z-index:2;
-}
-.anniversary-close:hover{background:var(--cream);color:var(--ink)}
-.anniversary-art{
-  display:block;width:100%;max-width:420px;
-  margin:0 auto;height:auto;
-}
-.anniversary-cta{
-  display:inline-block;margin-top:0.5rem;
-  padding:0.85rem 2rem;
-  background:transparent;color:var(--ink);
-  border:1px solid var(--ink);
-  text-decoration:none;border-radius:999px;
-  font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;
-  cursor:pointer;font-family:inherit;
-  transition:background .3s, color .3s;
-}
-.anniversary-cta:hover{background:var(--ink);color:var(--cream)}
-@media(max-width:520px){
-  .anniversary-card{padding:1.5rem 1.2rem 1.2rem;border-radius:14px}
-  .anniversary-art{max-width:100%}
-}
-
 /* ---------- WHATSAPP FLOATING BUTTON ---------- */
 .wa-float{
   position:fixed;
@@ -1660,15 +1605,6 @@ footer{
   </div>
 </footer>
 
-<!-- 6-year anniversary popup -->
-<div class="anniversary-popup" id="anniversaryPopup" role="dialog" aria-modal="true" aria-labelledby="anniversaryTitle" aria-hidden="true">
-  <div class="anniversary-card">
-    <button class="anniversary-close" id="anniversaryCloseBtn" aria-label="Close">&times;</button>
-    <img class="anniversary-art" src="images/anniversary-6years.jpg" alt="Celebrating 6 Years — Soul Healing Massage Therapy since 2020" id="anniversaryTitle">
-    <button class="anniversary-cta" id="anniversaryCtaBtn" type="button">Continue</button>
-  </div>
-</div>
-
 <!-- WhatsApp floating button. Number is +64 27 274 0992 (Kati). To update, edit the wa.me/ URL below. -->
 <a class="wa-float" href="https://wa.me/64272740992?text=Hi%20Kati%2C%20I%20found%20you%20through%20your%20website%20and%20I%27d%20like%20to%20book%20a%20massage.%20Could%20you%20help%20me%3F" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -1683,45 +1619,6 @@ const obs = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target);} });
 },{threshold:0.12});
 document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
-
-// 6-year anniversary popup — 1x per day cookie
-(function(){
-  const COOKIE = 'sh_anniversary_dismissed';
-  const popup = document.getElementById('anniversaryPopup');
-  if(!popup) return;
-
-  function hasDismissed(){
-    return document.cookie.split('; ').some(c => c.startsWith(COOKIE + '='));
-  }
-  function setDismissed(){
-    const now = new Date();
-    const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0);
-    document.cookie = COOKIE + '=1; expires=' + midnight.toUTCString() + '; path=/; SameSite=Lax';
-  }
-  function showPopup(){
-    popup.classList.add('visible');
-    popup.setAttribute('aria-hidden','false');
-    document.body.style.overflow = 'hidden';
-    setTimeout(()=>{ const btn = document.getElementById('anniversaryCloseBtn'); if(btn) btn.focus(); }, 120);
-  }
-  function hidePopup(){
-    popup.classList.remove('visible');
-    popup.setAttribute('aria-hidden','true');
-    document.body.style.overflow = '';
-    setDismissed();
-  }
-
-  if(!hasDismissed()){
-    setTimeout(showPopup, 1500);
-  }
-
-  document.getElementById('anniversaryCloseBtn').addEventListener('click', hidePopup);
-  document.getElementById('anniversaryCtaBtn').addEventListener('click', hidePopup);
-  popup.addEventListener('click', (e)=>{ if(e.target === popup) hidePopup(); });
-  document.addEventListener('keydown', (e)=>{
-    if(e.key === 'Escape' && popup.classList.contains('visible')) hidePopup();
-  });
-})();
 
 // Accordion toggle for services
 document.querySelectorAll('.category-toggle').forEach(btn=>{
