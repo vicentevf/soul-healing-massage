@@ -1246,6 +1246,170 @@ body::after{
   .hero-lotus::after{height:80px}
 }
 
+/* ---------- OFFER SECTION (August 6-year anniversary) ---------- */
+.offer-section{
+  background:linear-gradient(180deg,
+    var(--cream) 0%,
+    var(--cream-warm) 40%,
+    var(--cream-warm) 60%,
+    var(--cream) 100%);
+  padding:6rem 2rem;
+  position:relative;
+  overflow:hidden;
+}
+.offer-section::before{
+  content:'';
+  position:absolute;
+  top:-15%;left:50%;
+  transform:translateX(-50%);
+  width:700px;height:700px;
+  background:radial-gradient(circle,
+    rgba(144,113,207,0.09) 0%,
+    rgba(212,175,55,0.05) 40%,
+    transparent 65%);
+  filter:blur(60px);
+  pointer-events:none;
+}
+.offer-inner{
+  max-width:1100px;margin:0 auto;
+  position:relative;z-index:1;
+  text-align:center;
+}
+
+/* Gold badge — August time-limited marker */
+.offer-badge{
+  display:inline-flex;align-items:center;gap:0.55rem;
+  padding:0.55rem 1.35rem;
+  background:linear-gradient(135deg,
+    rgba(244,215,128,0.18) 0%,
+    rgba(212,175,55,0.12) 50%,
+    rgba(244,215,128,0.18) 100%);
+  border:1px solid rgba(212,175,55,0.5);
+  border-radius:999px;
+  font-family:'Onest',sans-serif;
+  font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;
+  font-weight:500;
+  color:#8a6d1a;
+  margin-bottom:1.75rem;
+  box-shadow:0 4px 14px -4px rgba(212,175,55,0.2);
+}
+.offer-badge-heart{
+  color:#c9a03a;
+  font-size:0.85rem;line-height:1;
+}
+
+.offer-eyebrow{
+  font-family:'Dancing Script',cursive;
+  font-weight:500;
+  font-size:1.5rem;
+  color:var(--clay);
+  display:block;
+  margin-bottom:0.5rem;
+}
+
+.offer-section h2{
+  font-family:'Fraunces',serif;
+  font-weight:300;
+  font-size:clamp(2.25rem, 4.5vw, 3.5rem);
+  line-height:1.05;letter-spacing:-0.02em;
+  color:var(--ink);
+  margin-bottom:1.5rem;
+}
+.offer-section h2 em{
+  font-style:italic;color:var(--clay);font-weight:300;
+}
+
+.offer-lede{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:1.15rem;line-height:1.65;
+  color:var(--ink-soft);
+  max-width:640px;margin:0 auto 3.5rem;
+}
+.offer-lede strong{
+  color:var(--clay);font-weight:400;
+  font-family:'Fraunces',serif;
+}
+
+/* 3 add-on cards */
+.offer-addons{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:1.5rem;
+  margin-bottom:3.5rem;
+}
+.offer-addon{
+  background:#fff;
+  border:1px solid rgba(43,42,38,0.07);
+  border-radius:16px;
+  padding:2.25rem 1.5rem;
+  text-align:center;
+  transition:transform .4s ease, box-shadow .4s ease, border-color .4s ease;
+}
+.offer-addon:hover{
+  transform:translateY(-4px);
+  box-shadow:0 20px 40px -20px rgba(144,113,207,0.25);
+  border-color:rgba(144,113,207,0.28);
+}
+.offer-addon-icon{
+  width:56px;height:56px;
+  margin:0 auto 1.3rem;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--clay);
+}
+.offer-addon-icon svg{
+  width:100%;height:100%;
+}
+.offer-addon h3{
+  font-family:'Onest',sans-serif;
+  font-weight:500;
+  font-size:0.75rem;letter-spacing:0.28em;text-transform:uppercase;
+  color:var(--ink);
+  margin-bottom:0.9rem;
+}
+.offer-addon p{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:1rem;line-height:1.55;
+  color:var(--ink-soft);
+  margin:0;
+}
+
+/* CTA block */
+.offer-cta-block{
+  display:flex;flex-direction:column;align-items:center;gap:1.5rem;
+}
+.offer-cta{
+  display:inline-flex;align-items:center;gap:0.7rem;
+  padding:1.1rem 2.5rem;
+  background:var(--ink);color:var(--cream);
+  text-decoration:none;border-radius:999px;
+  font-family:'Onest',sans-serif;
+  font-size:0.82rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;
+  transition:transform .35s cubic-bezier(.34,1.56,.64,1), background .3s, box-shadow .35s;
+}
+.offer-cta:hover{
+  background:var(--clay);
+  transform:translateY(-2px);
+  box-shadow:0 14px 30px -8px rgba(144,113,207,0.4);
+}
+.offer-cta svg{transition:transform .35s}
+.offer-cta:hover svg{transform:translateX(3px)}
+
+.offer-note{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:0.98rem;line-height:1.5;
+  color:var(--ink-soft);
+  max-width:520px;
+}
+.offer-note .heart{color:#c9a03a}
+
+@media(max-width:820px){
+  .offer-section{padding:4rem 1.25rem}
+  .offer-addons{grid-template-columns:1fr;gap:1rem;margin-bottom:2.5rem}
+  .offer-addon{padding:1.75rem 1.25rem}
+  .offer-lede{margin-bottom:2.5rem}
+  .offer-eyebrow{font-size:1.3rem}
+}
+
 /* ---------- WHATSAPP FLOATING BUTTON ---------- */
 .wa-float{
   position:fixed;
@@ -1386,6 +1550,76 @@ body::after{
   <div class="hero-scroll-hint" aria-hidden="true">
     Scroll
     <div class="hero-scroll-hint-line"></div>
+  </div>
+</section>
+
+<!-- OFFER — August 6-year anniversary campaign -->
+<section class="offer-section" id="offer" aria-labelledby="offer-heading">
+  <div class="offer-inner">
+    <div class="offer-badge">
+      <span class="offer-badge-heart" aria-hidden="true">♥</span>
+      All month of August
+    </div>
+    <span class="offer-eyebrow">Let's celebrate together</span>
+    <h2 id="offer-heading">A gift, <em>in gratitude.</em></h2>
+    <p class="offer-lede">Book any 60-minute massage this August and enjoy an extra <strong>15 minutes on the house</strong> — your choice of scalp, feet, or facial add-on.</p>
+
+    <div class="offer-addons">
+      <article class="offer-addon" data-reveal>
+        <div class="offer-addon-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="26" r="11"/>
+            <path d="M13 16c2-2 4-2 6 0s4 2 6 0 4-2 6 0 4 2 6 0"/>
+            <path d="M15 21c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/>
+          </svg>
+        </div>
+        <h3>Scalp Massage</h3>
+        <p>Relieve tension, improve circulation, and promote deep relaxation.</p>
+      </article>
+
+      <article class="offer-addon" data-reveal>
+        <div class="offer-addon-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="16" cy="30" rx="5" ry="9"/>
+            <circle cx="13" cy="19" r="1.5" fill="currentColor" stroke="none"/>
+            <circle cx="16" cy="17" r="1.2" fill="currentColor" stroke="none"/>
+            <circle cx="19" cy="17.5" r="1" fill="currentColor" stroke="none"/>
+            <circle cx="21.5" cy="18.5" r="0.9" fill="currentColor" stroke="none"/>
+            <ellipse cx="32" cy="30" rx="5" ry="9"/>
+            <circle cx="35" cy="19" r="1.5" fill="currentColor" stroke="none"/>
+            <circle cx="32" cy="17" r="1.2" fill="currentColor" stroke="none"/>
+            <circle cx="29" cy="17.5" r="1" fill="currentColor" stroke="none"/>
+            <circle cx="26.5" cy="18.5" r="0.9" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h3>Feet Massage</h3>
+        <p>Release stress, improve circulation, and leave you feeling lighter and renewed.</p>
+      </article>
+
+      <article class="offer-addon" data-reveal>
+        <div class="offer-addon-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="24" cy="24" rx="10" ry="12"/>
+            <circle cx="20" cy="22" r="1" fill="currentColor" stroke="none"/>
+            <circle cx="28" cy="22" r="1" fill="currentColor" stroke="none"/>
+            <path d="M20.5 29c1.5 1.5 5.5 1.5 7 0"/>
+            <path d="M11 22c-1.2-0.6-2-1.7-2-3s0.8-2.4 2-3"/>
+            <path d="M37 22c1.2-0.6 2-1.7 2-3s-0.8-2.4-2-3"/>
+            <path d="M9 15l1.5 0.5M39 15l-1.5 0.5"/>
+          </svg>
+        </div>
+        <h3>Facial Massage</h3>
+        <p>Boost circulation, reduce tension, and promote a natural, healthy glow.</p>
+      </article>
+    </div>
+
+    <div class="offer-cta-block">
+      <a class="offer-cta" href="https://www.fresha.com/a/soul-healing-massage-therapy-mount-maunganui-632-grenada-street-cfspcm6z" target="_blank" rel="noopener">
+        Book on Fresha
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <p class="offer-note">Thank you for trusting me. Here's to many more years of healing together. <span class="heart">♥</span></p>
+    </div>
   </div>
 </section>
 
